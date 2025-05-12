@@ -1,0 +1,38 @@
+.windsurf-popup {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 15px;
+  color: #222;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  min-width: 320px;
+  max-width: 400px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.windsurf-summary {
+  margin-bottom: 12px;
+}
+.windsurf-news-article {
+  margin-bottom: 8px;
+}
+.windsurf-loading {
+  color: #888;
+  font-style: italic;
+}
+.windsurf-error {
+  color: #c00;
+}
+.windsurf-close {
+  background: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.windsurf-close:hover {
+  background: #ddd;
+}
