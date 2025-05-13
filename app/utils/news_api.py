@@ -2,9 +2,10 @@ import aiohttp
 import asyncio
 from typing import List, Dict
 
+
 class NewsAPIClient:
     def __init__(self, api_key: str):
-        self.api_key = "5f127c1cd18842fd8380c946fd50ad63"
+        self.api_key = api_key
         self.base_url = "https://newsapi.org/v2"
 
     async def search_news(self, queries: List[str]) -> List[Dict]:
@@ -23,10 +24,12 @@ class NewsAPIClient:
                     results.append(await response.json())
             return results
 
+
 if __name__ == "__main__":
     import asyncio
 
-    api_key = "5f127c1cd18842fd8380c946fd50ad63"  # Or load from env
+    # For testing only
+    api_key = "NEWS_API_KEY"
     client = NewsAPIClient(api_key)
 
     async def test():

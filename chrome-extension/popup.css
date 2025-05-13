@@ -1,30 +1,65 @@
-.windsurf-popup {
+/* Common styles for both popups */
+body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  font-size: 15px;
-  color: #222;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+button {
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #3367d6;
+}
+
+/* In-page popup styles */
+.windsurf-popup {
+  position: fixed;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   min-width: 320px;
   max-width: 400px;
   max-height: 60vh;
   overflow-y: auto;
+  z-index: 99999;
 }
+
 .windsurf-summary {
   margin-bottom: 12px;
 }
+
 .windsurf-news-article {
   margin-bottom: 8px;
 }
+
 .windsurf-loading {
   color: #888;
   font-style: italic;
 }
+
 .windsurf-error {
   color: #c00;
 }
+
 .windsurf-close {
   background: #eee;
   border: none;
@@ -33,6 +68,96 @@
   padding: 4px 10px;
   font-size: 13px;
 }
+
 .windsurf-close:hover {
   background: #ddd;
+}
+
+/* Toolbar popup specific styles */
+.input-container {
+  margin-bottom: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin-right: 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab.active {
+  background: white;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 16px 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.loading {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.news-article {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-article:last-child {
+  border-bottom: none;
+}
+
+.article-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.article-source {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.article-description {
+  font-size: 14px;
 }

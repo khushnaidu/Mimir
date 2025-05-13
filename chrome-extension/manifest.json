@@ -1,19 +1,36 @@
 {
   "manifest_version": 3,
-  "name": "Windsurf Political Context Analyzer",
+  "name": "Mimir Political Context Analyzer",
   "version": "1.0",
   "description": "Get political discourse and news context for any highlighted text.",
-  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content_script.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "css": [
+        "popup.css"
+      ]
     }
   ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/mimir_icon_128.png"
+    }
+  },
   "icons": {
-  "128": "icons/icon128.png"
-}
+    "128": "icons/icon128.png"
+  }
 }
