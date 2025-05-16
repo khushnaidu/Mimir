@@ -1,0 +1,25 @@
+{
+  "query_id": "28d783a2-aebc-4c4b-942b-c1185e6a60d3",
+  "timestamp": "2025-05-13T13:24:30.762144",
+  "model": "mistral-7b",
+  "input_text": "India, Pakistan and the fight for Kashmir",
+  "total_process_time": 8.673042058944702,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.0990538597106934,
+      "token_count": 220,
+      "result": "Reformatted query: India Pakistan Kashmir conflict"
+    },
+    "news_query_extraction": {
+      "latency": 0.5238521099090576,
+      "token_count": 288,
+      "result": "India, Pakistan, Kashmir conflict, territorial dispute, geopolitical tensions"
+    },
+    "summarization": {
+      "latency": 6.0688817501068115,
+      "token_count": 2305,
+      "result": "Here are what other news sources are saying:\n\n1. **Business Insider**: The article discusses India's claim of targeting Pakistan's air defenses amidst escalating tensions between the two countries. The conflict between India and Pakistan is reaching a worrying new phase with drone attacks and military actions.\n   [Read more](https://www.businessinsider.com/india-targets-pakistan-air-defenses-drones-conflict-heats-up-kashmir-2025-5)\n\n2. **Time**: This piece provides a timeline of the longstanding tensions between India and Pakistan over Kashmir, highlighting the recent significant escalation involving gunfire and airstrikes exchanged between the two nations.\n   [Read more](https://time.com/7283794/india-pakistan-kashmir-tensions-timeline-history-conflict/)\n\n3. **BBC News**: Both India and Pakistan have accused each other of ceasefire violations shortly after agreeing to a ceasefire following cross-border military strikes, adding to the ongoing conflict dynamics between the two nations.\n   [Read more](https://www.bbc.com/news/articles/cvg9d913v20o)\n\n4. **Business Insider**: The article discusses how airlines are rerouting flights over Asia due to heightened tensions between India and Pakistan, leading to a significant decrease in flights over Pakistani airspace.\n   [Read more](https://www.businessinsider.com/india-pakistan-tensions-force-airlines-reroute-flights-avoid-conflict-zone-2025-5)\n\n5. **The Atlantic**: This piece delves into the current conflict between India and Pakistan, highlighting how both countries are fueling extremism without a clear resolution in sight, marking a new and concerning phase in their relationship.\n   [Read more](https://www.theatlantic.com/international/archive/2025/05/india-pakistan-conflict-extremism/682746/)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Reddit Post**: The Reddit post discusses India's attack on Pakistani Kashmir, sparking discussions among users about the escalating conflict between the two nuclear powers. Comments touch on the potential involvement of other actors such as the Taliban and China, highlighting the complex geopolitical dynamics at play.\n   [Read more](https://www.reuters.com/world/asia-pacific/multiple-loud-explosions-heard-pakistani-kashmir-reuters-witness-2025-05-06/)"
+    }
+  },
+  "user_feedback": null
+}

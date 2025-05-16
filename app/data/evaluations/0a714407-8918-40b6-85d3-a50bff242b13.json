@@ -1,0 +1,25 @@
+{
+  "query_id": "0a714407-8918-40b6-85d3-a50bff242b13",
+  "timestamp": "2025-05-13T10:35:50.694306",
+  "model": "deepseek-7b",
+  "input_text": "Israel expects 50% of Gaza\u2019s people to flee during full-scale assault",
+  "total_process_time": 2.0879740715026855,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.49389195442199707,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    },
+    "news_query_extraction": {
+      "latency": 0.5255639553070068,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    },
+    "summarization": {
+      "latency": 0.6108808517456055,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    }
+  },
+  "user_feedback": null
+}

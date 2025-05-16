@@ -1,0 +1,25 @@
+{
+  "query_id": "5002b326-afb9-46d3-b007-98211a044392",
+  "timestamp": "2025-05-13T16:37:58.318889",
+  "model": "gpt-4",
+  "input_text": "Israel \u2018normalisation\u2019 takes backseat as Trump announces Saudi deals",
+  "total_process_time": 12.999804973602295,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.075307846069336,
+      "token_count": 229,
+      "result": "Trump's announcement of Saudi deals and its impact on Israel normalization"
+    },
+    "news_query_extraction": {
+      "latency": 1.210097074508667,
+      "token_count": 297,
+      "result": "Israel normalisation, Trump, Saudi deals, US foreign policy, Middle East relations"
+    },
+    "summarization": {
+      "latency": 8.596747875213623,
+      "token_count": 2036,
+      "result": "Here are what other news sources are saying: Al Jazeera reports that Donald Trump is making a three-day tour of the Gulf, his first state visit since his re-election, with economic deals and security being top of the agenda. The visit will include Saudi Arabia, Qatar, and UAE. In another article, Al Jazeera discusses how Trump has given legitimacy to a longstanding Israeli vision of transferring Gaza's Palestinians. International Business Times highlights that Trump's Gulf tour includes a push for Saudi Arabia to recognize Israel, following the example set by UAE, which has benefitted from Israeli ties. Al Jazeera also published articles discussing the calls for a protective force to be deployed in Gaza and the West Bank, and critiquing USAID's role in Palestine as normalizing colonization.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the subreddit 'moderatepolitics' discusses Trump's expected announcement of a historic normalization deal between Bahrain and Israel. One top comment credits the Trump administration for pushing regional alliances to maintain stability as the US shifts away from playing 'world police'. Another comment, while critical of the Trump administration overall, praises this move as historic and potentially indicative of a future normalization deal with Saudi Arabia."
+    }
+  },
+  "user_feedback": null
+}

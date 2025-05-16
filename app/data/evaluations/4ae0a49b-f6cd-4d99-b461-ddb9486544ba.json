@@ -1,0 +1,25 @@
+{
+  "query_id": "4ae0a49b-f6cd-4d99-b461-ddb9486544ba",
+  "timestamp": "2025-05-13T10:21:50.629490",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Trump administration asks Supreme Court to resume deportation of nearly 200 Venezuelan migrants",
+  "total_process_time": 7.173395872116089,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.7298014163970947,
+      "token_count": 229,
+      "result": "Reformatted query: Trump administration Supreme Court deportation Venezuelan migrants"
+    },
+    "news_query_extraction": {
+      "latency": 1.1785471439361572,
+      "token_count": 296,
+      "result": "Text: UK Parliament passes new climate change legislation to achieve net-zero emissions by 2050\n\nExtracted keywords: UK Parliament, climate change legislation, net-zero emissions, 2050 target"
+    },
+    "summarization": {
+      "latency": 4.2293219566345215,
+      "token_count": 2250,
+      "result": "Here are what other news sources are saying:\n\n1. The article from Gizmodo discusses how home appliances like showerheads and fridges have become political statements due to deepening political polarization. Efficiency standards for appliances, once mundane, now reflect broader ideological divides.\nSource: [Gizmodo - How Your Showerhead and Fridge Became Political Statements](https://gizmodo.com/how-your-showerhead-and-fridge-became-political-statements-2000593821)\n\n2. Another piece from PoliticoPro highlights President Trump's dismissal of scientists working on the National Climate Assessment, raising concerns about the potential impact on the report's credibility and the rise of pseudoscience in climate discourse.\nSource: [PoliticoPro - Trump Dismisses Scientists Writing the National Climate Assessment](https://subscriber.politicopro.com/article/eenews/2025/04/29/trump-dismisses-scientists-writing-the-national-climate-assessment-00314494)\n\n3. A related article on PoliticoPro discusses the Trump administration's EPA reorganization, signaling an end to climate-related work by eliminating offices responsible for tracking greenhouse gas emissions and regulating air pollution.\nSource: [PoliticoPro - Trump EPA Reorganization Signals End to Climate Work](https://subscriber.politicopro.com/article/eenews/2025/05/05/epa-reorganization-signals-end-to-climate-work-00326131)\n\n4. Elon Musk's involvement in funding a carbon removal XPrize while simultaneously cutting funding for climate research is explored in another PoliticoPro piece, raising questions about the consistency of his actions in climate advocacy.\nSource: [PoliticoPro - Musk Funded the Carbon-Removal XPrize but Is Now Slashing Climate Research](https://subscriber.politicopro.com/article/eenews/2025/04/23/musk-bankrolled-a-100m-climate-contest-now-its-tainted-00304093)\n\n5. The Verge article delves into the issue of orbital overcrowding and potential disasters as Amazon launches its Project Kuiper satellites to rival SpaceX Starlink, contributing to the growing number of satellites orbiting Earth.\nSource: [The Verge - Starlink\u2019s got company \u2014 and orbital overcrowding is a disaster waiting to happen](https://www.theverge.com/space/657113/starlink-amazon-satellites)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. A Reddit post discusses the US Supreme Court's temporary halt to deportations of Venezuelan migrants,"
+    }
+  },
+  "user_feedback": null
+}

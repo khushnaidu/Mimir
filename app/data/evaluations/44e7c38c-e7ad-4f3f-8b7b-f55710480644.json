@@ -1,0 +1,25 @@
+{
+  "query_id": "44e7c38c-e7ad-4f3f-8b7b-f55710480644",
+  "timestamp": "2025-05-13T13:56:07.884990",
+  "model": "tinyllama-1.1b",
+  "input_text": "April 22 Pahalgam attack in Indian-administered Kashmir that saw 25 tourists and a local guide killed in an armed group attack. India blamed Pakistan for the attack; Islamabad denied any role.",
+  "total_process_time": 8.151758193969727,
+  "metrics": {
+    "reformatting": {
+      "latency": 7.347270727157593,
+      "token_count": null,
+      "result": "Error processing request with tinyllama-1.1b. Please try another model."
+    },
+    "news_query_extraction": {
+      "latency": 0.28722620010375977,
+      "token_count": null,
+      "result": "Error processing request with tinyllama-1.1b. Please try another model."
+    },
+    "summarization": {
+      "latency": 0.17019224166870117,
+      "token_count": null,
+      "result": "Error processing request with tinyllama-1.1b. Please try another model."
+    }
+  },
+  "user_feedback": null
+}

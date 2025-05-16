@@ -121,6 +121,64 @@
         .article-description {
             font-size: 14px;
         }
+
+        .model-selection {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .model-selection label {
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        .model-selection select {
+            flex-grow: 1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .metrics-container {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .feedback-container {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .feedback-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .feedback-btn {
+            margin: 0 10px;
+            font-size: 18px;
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        .feedback-btn:hover {
+            background: #e0e0e0;
+        }
+
+        #feedbackComments {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            padding: 5px;
+            resize: none;
+        }
     </style>
 </head>
 
@@ -129,6 +187,15 @@
 
     <div class="input-container">
         <textarea id="textInput" placeholder="Enter text to analyze..."></textarea>
+    </div>
+
+    <div class="model-selection">
+        <label for="modelSelector">Model:</label>
+        <select id="modelSelector">
+            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+            <option value="gpt-4">gpt-4</option>
+            <option value="tinyllama-1.1b">tinyllama-1.1b (Open Source)</option>
+        </select>
     </div>
 
     <button id="analyzeButton">Analyze</button>
@@ -140,6 +207,7 @@
             <div class="tab active" data-tab="summary">Summary</div>
             <div class="tab" data-tab="news">News</div>
             <div class="tab" data-tab="reddit">Reddit</div>
+            <div class="tab" data-tab="metrics">Metrics</div>
         </div>
 
         <div id="summaryTab" class="tab-content active">
@@ -153,6 +221,20 @@
         <div id="redditTab" class="tab-content">
             <div id="redditContent"></div>
         </div>
+
+        <div id="metricsTab" class="tab-content">
+            <div id="metricsContent"></div>
+        </div>
+    </div>
+
+    <div id="feedbackContainer" class="feedback-container" style="display: none;">
+        <h3>How was this analysis?</h3>
+        <div class="feedback-buttons">
+            <button class="feedback-btn" data-rating="1">👎</button>
+            <button class="feedback-btn" data-rating="3">👌</button>
+            <button class="feedback-btn" data-rating="5">👍</button>
+        </div>
+        <textarea id="feedbackComments" placeholder="Any additional comments?" rows="2"></textarea>
     </div>
 
     <script src="popup.js"></script>

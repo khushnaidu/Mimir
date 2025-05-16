@@ -1,0 +1,25 @@
+{
+  "query_id": "67f89d4e-c837-49b1-8919-0aecf7076258",
+  "timestamp": "2025-05-13T12:43:38.259742",
+  "model": "gpt-4",
+  "input_text": "This new state of affairs has been called not to secure the national interest but to satisfy Modi\u2019s nationalist support base, which was bewildered and disappointed with the announcement of the ceasefire by United States President Donald Trump. The detrimental impact that this new militarised normal will have on Indian democracy is clearly a price worth paying, according to the ruling Bharatiya Janata Party (BJP)",
+  "total_process_time": 15.688297033309937,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.7040951251983643,
+      "token_count": 306,
+      "result": "Modi's nationalist support base, US ceasefire announcement impact, Indian democracy under militarised normal, Bharatiya Janata Party stance"
+    },
+    "news_query_extraction": {
+      "latency": 1.862678050994873,
+      "token_count": 377,
+      "result": "Modi's nationalist support base, United States President Donald Trump ceasefire announcement, Indian democracy, militarised normal, ruling Bharatiya Janata Party (BJP)"
+    },
+    "summarization": {
+      "latency": 11.184192180633545,
+      "token_count": 2057,
+      "result": "Here are what other news sources are saying: Tensions between India and Pakistan are escalating, with experts warning of a potential military conflict following a terrorist attack in Indian-administered Kashmir that killed 26 tourists. Meanwhile, President Donald Trump has announced a halt to airstrikes on the Houthi group in Yemen after assurances that they will cease attacks on American ships. In a related development, the Houthis have clarified that their ceasefire agreement with the U.S. does not extend to Israel. Israeli-US hostage Edan Alexander was released by Hamas in Gaza as part of an effort to reach a ceasefire agreement. Finally, amidst ongoing economic tensions, the Trump administration has agreed to roll back tariffs on China, signaling a possible resolution to the trade war.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the 'socialism' subreddit discusses concerns about rising nationalism in India, likening it to a neo-Nazi regime and expressing fears about religious crackdowns and the new citizenship bill. The post has sparked a conversation about the rise of the right-wing across the globe, with users sharing their experiences from different regions including India and Europe. There is a general sentiment of fear and apprehension, but also a call for increased attention and action against these perceived threats."
+    }
+  },
+  "user_feedback": null
+}

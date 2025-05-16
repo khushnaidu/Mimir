@@ -1,0 +1,25 @@
+{
+  "query_id": "7930eca4-4cd4-49a7-9efe-58ae21525683",
+  "timestamp": "2025-05-14T16:58:35.457592",
+  "model": "gpt-3.5-turbo",
+  "input_text": "The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.",
+  "total_process_time": 5.204204082489014,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.6032938957214355,
+      "token_count": 286,
+      "result": "Conflict sparked by shooting in Pahalgam, India-administered Kashmir. Accusations against Pakistan government. Denial by Islamabad."
+    },
+    "news_query_extraction": {
+      "latency": 1.01328706741333,
+      "token_count": 354,
+      "result": "Conflict, deadly shooting attack, Pahalgam area, India-administered Kashmir, Indian tourists, Nepalese visitor, Pakistan government, accusation, Islamabad"
+    },
+    "summarization": {
+      "latency": 2.9712140560150146,
+      "token_count": 2289,
+      "result": "Here are what other news sources are saying:\n\n1. Yahoo Entertainment reports on the case of a Texas gunman who killed 23 people in a racist attack targeting Hispanic shoppers at a Walmart in El Paso in 2019. The gunman is set to plead guilty to murder nearly 6 years after the incident.\n   Source: [Yahoo Entertainment](https://www.yahoo.com/news/man-fatally-shot-23-el-040338044.html)\n\n2. BBC News covers a story where a man accused of killing an Alawite during sectarian violence in Syria claims that armed civilians were advised and monitored by government forces.\n   Source: [BBC News](https://www.bbc.com/news/articles/cm2erkr1n15o)\n\n3. Al Jazeera English discusses how an Indian tourist inadvertently filmed a deadly shooting in Pahalgam, Kashmir, while riding a zipline.\n   Source: [Al Jazeera English](https://www.aljazeera.com/program/newsfeed/2025/4/29/indian-tourist-on-zipline-inadvertently-filmed-kashmir-attack)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. A Reddit post titled \"India says it attacked Pakistan, Pakistani Kashmir\" discusses escalating conflict between India and Pakistan, raising concerns about potential involvement of Taliban and China-India tensions. Users express varying degrees of apprehension and skepticism about the situation, with some humor injected into the discussion.\n   Source: [Reddit Post](https://www.reuters.com/world/asia-pacific/multiple-loud-explosions-heard-pakistani-kashmir-reuters-witness-2025-05-06/)\n\n2. Another Reddit post titled \"A history of Indian aggression against Kashmir\" delves into the historical context of the conflict in Kashmir, highlighting the impact of imperialism and occupation. The post aims to shed light on the complexities of the situation and prompt discussion on the topic.\n   Source: [Reddit Post](N/A)"
+    }
+  },
+  "user_feedback": null
+}

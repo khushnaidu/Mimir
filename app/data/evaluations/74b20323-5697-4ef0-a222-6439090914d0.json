@@ -1,0 +1,25 @@
+{
+  "query_id": "74b20323-5697-4ef0-a222-6439090914d0",
+  "timestamp": "2025-05-13T13:48:41.722289",
+  "model": "tinyllama-1.1b",
+  "input_text": "Pakistan said it struck multiple Indian military bases in the early hours of Saturday, May 10, after claiming that India had launched missiles against three Pakistani bases, marking a sharp escalation in their already soaring tensions, as the neighbours edge closer to an all-out war.",
+  "total_process_time": 6.86249303817749,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.7092490196228027,
+      "token_count": 271,
+      "result": "Pakistan attacked Indian military bases on May 10, escalating tensions towards potential war."
+    },
+    "news_query_extraction": {
+      "latency": 0.6954638957977295,
+      "token_count": 338,
+      "result": "Pakistan-India conflict, Military strikes, Cross-border tensions, Escalation, All-out war"
+    },
+    "summarization": {
+      "latency": 4.564532995223999,
+      "token_count": 2378,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News**: India and Pakistan have accused each other of \"violations\" shortly after agreeing to a ceasefire following days of cross-border military strikes. Both Delhi and Islamabad claimed breaches in the ceasefire deal brokered after a series of cross-border attacks.\n   Source: [BBC News](https://www.bbc.com/news/articles/cvg9d913v20o)\n\n2. **Business Insider**: India has stated it targeted Pakistan's air defenses, signaling a concerning escalation in the long-standing conflict between the two nations. The use of drones and attacks on air defenses indicate a new phase in the conflict dynamics.\n   Source: [Business Insider](https://www.businessinsider.com/india-targets-pakistan-air-defenses-drones-conflict-heats-up-kashmir-2025-5)\n\n3. **Business Insider**: Tensions between India and Pakistan have led airlines to reroute flights over Asia to avoid the conflict zone, with Pakistani airspace showing significantly reduced air traffic as a result of escalating tensions.\n   Source: [Business Insider](https://www.businessinsider.com/india-pakistan-tensions-force-airlines-reroute-flights-avoid-conflict-zone-2025-5)\n\n4. **Business Insider**: China's J-10C fighter jet, deployed by Pakistan against India, is gaining attention as a potential competitor to western fighter jets. Experts suggest that the J-10C could pose a significant challenge to its western counterparts.\n   Source: [Business Insider](https://www.businessinsider.com/china-j10-fighter-jet-f-16-pakistan-air-force-2025-5)\n\n5. **Time**: A timeline of tensions between India and Pakistan over Kashmir, highlighting the longstanding conflict dating back to their independence and partition in 1947. The recent exchange of gunfire and airstrikes marks a significant escalation in hostilities.\n   Source: [Time](https://time.com/7283794/india-pakistan-kashmir-tensions-timeline-history-conflict/)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Neoliberal Subreddit**: A post discussing the escalation of attacks to military bases between India and Pakistan, sparking concern among users. Comments reflect apprehension over the situation, with one user emphasizing the gravity of the event and its potential consequences.\n   Source: [Reddit - Neoliberal](https://www.reddit.com/r/neoliberal/comments/1kj1a4a/india_and_p"
+    }
+  },
+  "user_feedback": null
+}

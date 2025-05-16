@@ -1,0 +1,25 @@
+{
+  "query_id": "0657dac5-ca59-4423-90f6-8f20db9ddbf0",
+  "timestamp": "2025-05-13T12:45:04.246969",
+  "model": "gpt-3.5-turbo",
+  "input_text": "This new state of affairs has been called not to secure the national interest but to satisfy Modi\u2019s nationalist support base, which was bewildered and disappointed with the announcement of the ceasefire by United States President Donald Trump. The detrimental impact that this new militarised normal will have on Indian democracy is clearly a price worth paying, according to the ruling Bharatiya Janata Party (BJP)",
+  "total_process_time": 5.892915964126587,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.6000189781188965,
+      "token_count": 297,
+      "result": "State the impact of Modi's nationalist policies on Indian democracy BJP's militarized normal."
+    },
+    "news_query_extraction": {
+      "latency": 0.5601081848144531,
+      "token_count": 374,
+      "result": "Modi's nationalist support base, ceasefire announcement, United States President Donald Trump, Indian democracy, ruling Bharatiya Janata Party (BJP)"
+    },
+    "summarization": {
+      "latency": 3.8984949588775635,
+      "token_count": 2203,
+      "result": "1. Start with \"Here are what other news sources are saying:\" followed by a summary of the news articles:\n\nHere are what other news sources are saying:\n\n- ABC News (AU) reports on escalating tensions between India and Pakistan following a terrorist attack in Indian-administered Kashmir. The article discusses the risk of military conflict between the nuclear-armed neighbors and the potential for escalation to a nuclear war.\n- BBC News covers accusations of ceasefire violations between India and Pakistan, with both countries accusing each other of breaching a ceasefire agreement after cross-border attacks.\n- Another BBC News article highlights Ukraine and Russia trading blame for breaking an \"Easter truce,\" with both sides accusing each other of shelling and drone attacks.\n- In a separate BBC News piece, the focus is on diplomatic efforts between Ukraine and Russia, with concerns raised about violations of a 30-hour truce despite ongoing peace talks.\n- The BBC also reports on top military officials from India and Pakistan scheduled to discuss the ceasefire agreement brokered by the US.\n\n2. Then include \"Here is some relevant discourse on this and related issues on Reddit:\" followed by a summary of the Reddit posts:\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n- A Reddit post titled \"A Nazi India on the horizon!\" in the r/socialism subreddit expresses concerns about a perceived rise of neo-Nazism in India, citing actions such as concentration camps and religious crackdowns under the current regime. The post laments the erosion of democratic values and calls for attention to the situation.\n- Comments on the post reflect fear and apprehension among some users, with one individual expressing personal safety concerns as a leftist organizer in India. Others draw parallels to the global rise of right-wing movements and emphasize the need for solidarity against fascism.\n- The discussion expands to include comparisons with other countries facing similar challenges, such as Brazil, and underscores the unique scale and impact of Hindutva ideology in India, given its political power and nuclear capabilities."
+    }
+  },
+  "user_feedback": null
+}

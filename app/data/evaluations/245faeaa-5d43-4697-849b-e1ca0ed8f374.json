@@ -1,0 +1,25 @@
+{
+  "query_id": "245faeaa-5d43-4697-849b-e1ca0ed8f374",
+  "timestamp": "2025-05-13T10:39:44.629116",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Israel has turned 70% of Gaza into no-go zones, in maps",
+  "total_process_time": 3.130582094192505,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.6952610015869141,
+      "token_count": 229,
+      "result": "Reformatted query: Gaza no-go zones Israel maps"
+    },
+    "news_query_extraction": {
+      "latency": 0.6951251029968262,
+      "token_count": 291,
+      "result": "Text: The UK Parliament passed the Brexit deal with a narrow majority\nExtracted keywords: UK Parliament, Brexit deal, narrow majority, European Union, trade agreement"
+    },
+    "summarization": {
+      "latency": 0.8100550174713135,
+      "token_count": 1838,
+      "result": "I'm unable to provide real-time news updates at the moment. If you have any specific political topics or issues you'd like me to discuss or analyze, feel free to let me know!"
+    }
+  },
+  "user_feedback": null
+}

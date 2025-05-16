@@ -1,0 +1,25 @@
+{
+  "query_id": "6c8ceb71-60e1-45e2-86b5-65c42f5728c4",
+  "timestamp": "2025-05-13T16:33:41.264909",
+  "model": "tinyllama-1.1b",
+  "input_text": "India expels Pakistan diplomat as war of words simmers in place of fighting",
+  "total_process_time": 8.04963994026184,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.4956979751586914,
+      "token_count": 230,
+      "result": "India expels Pakistan diplomat war of words simmering fighting"
+    },
+    "news_query_extraction": {
+      "latency": 0.8521168231964111,
+      "token_count": 303,
+      "result": "India-Pakistan diplomatic tensions, expulsion of diplomat, war of words, simmering conflict, international relations"
+    },
+    "summarization": {
+      "latency": 4.678101062774658,
+      "token_count": 2336,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News**:\nIndia has announced measures targeting Pakistan following an attack in Indian-administered Kashmir, including the closure of the main border crossing link. This move comes after 26 people were killed by gunmen in the region.\n[Read more](https://www.bbc.com/news/articles/ce8g2njm2d2o)\n\n2. **NPR**:\nTensions between India and Pakistan have escalated after a deadly attack in Kashmir. India suspended a water-sharing treaty, downgraded diplomatic ties with Pakistan, while Islamabad closed airspace to Indian aircraft and suspended all trade with India.\n[Read more](https://www.npr.org/2025/04/24/g-s1-62469/india-pakistan-kashmir-attack-tensions)\n\n3. **Yahoo Entertainment**:\nIndian Prime Minister Narendra Modi vowed to track and punish every terrorist and their backers of the Kashmir attack. Tensions between India and Pakistan remain high as New Delhi blames Islamabad for the deadly attack.\n[Read more](https://www.yahoo.com/news/indian-pm-vows-track-punish-104143230.html)\n\n4. **Time**:\nThe India-Pakistan crisis has reached a critical point after a deadly attack in Kashmir, with heightened tensions. While a hot war is unlikely, any missteps could potentially change the situation, causing concern globally.\n[Read more](https://time.com/7282263/india-pakistan-crisis-pahalgam-attack/)\n\n5. **Yahoo Entertainment**:\nIndia has requested the International Monetary Fund to review loans disbursed to Pakistan, as tensions between the two countries continue to escalate.\n[Read more](https://sg.finance.yahoo.com/news/india-asks-imf-review-loans-103909243.html)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n- **Reddit (neoliberal)**:\nA post discusses Pakistan's Army Chief, Asim Munir, stepping out to confront India, highlighting his emphasis on the two-nation theory. Users express varying opinions, with some critical of Munir's stance and others discussing the implications of his actions in the ongoing tensions between India and Pakistan.\n[Read more](https://www.nytimes.com/2025/05/05/world/asia/pakistan-india-asim-munir.html)"
+    }
+  },
+  "user_feedback": null
+}

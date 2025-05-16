@@ -1,0 +1,25 @@
+{
+  "query_id": "15efc3df-3566-4736-9137-7c22a73c6bb6",
+  "timestamp": "2025-05-13T16:32:09.549909",
+  "model": "gpt-4",
+  "input_text": "India expels Pakistan diplomat as war of words simmers in place of fighting",
+  "total_process_time": 15.27352499961853,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.8871350288391113,
+      "token_count": 228,
+      "result": "India's expulsion of Pakistan diplomat amidst verbal conflict"
+    },
+    "news_query_extraction": {
+      "latency": 1.0728089809417725,
+      "token_count": 297,
+      "result": "India Pakistan relations, diplomat expulsion, war of words, simmering conflict"
+    },
+    "summarization": {
+      "latency": 12.659440040588379,
+      "token_count": 2052,
+      "result": "Here are what other news sources are saying: The BBC reports that India has launched strikes on Pakistani-administered Kashmir, showing footage of the aftermath including rubble and destruction. Meanwhile, Time outlines the history of conflict between India and Pakistan over Kashmir, highlighting a recent escalation where both countries have exchanged gunfire and airstrikes. ABC News echoes this, noting a significant rise in tensions following India's missile attack on Pakistan. In response to an attack in Kashmir, Indian Prime Minister Narendra Modi has pledged to track and punish terrorists and their backers, as per Yahoo Entertainment. Al Jazeera English provides a brief overview of the crisis, which began with an attack in Kashmir in mid-April.\n\nHere is some relevant discourse on this and related issues on Reddit: A post in the 'neoliberal' subreddit discusses the role of Pakistan\u2019s most powerful man in confronting India. The top comments range from discussing the \"two-nation theory\" that separates Muslims and Hindus into distinct nations, to criticism of Asim Munir, Pakistan's army chief, for his role in escalating the conflict. One user questions whether Modi could persuade Trump to intervene. Another highlights Modi's vow to pursue terrorists and their backers, noting previous Indian responses to attacks in Kashmir. A final comment appreciates the transparency of the army chief's views, even though they might be controversial."
+    }
+  },
+  "user_feedback": null
+}

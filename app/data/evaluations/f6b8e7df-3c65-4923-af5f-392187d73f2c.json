@@ -1,0 +1,25 @@
+{
+  "query_id": "f6b8e7df-3c65-4923-af5f-392187d73f2c",
+  "timestamp": "2025-05-13T11:01:36.464109",
+  "model": "gpt-3.5-turbo",
+  "input_text": "On May 12, two days after the announcement of a ceasefire between India and Pakistan, Indian Prime Minister Narendra Modi finally addressed the nation. He stated that the Indian army had only \u201cpaused\u201d military action and Operation Sindoor, launched in the aftermath of the April 22 massacre in Pahalgam to target \u201cterrorist hideouts\u201d, had not ended.",
+  "total_process_time": 4.678354740142822,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.0893549919128418,
+      "token_count": 297,
+      "result": "Indian Prime Minister Narendra Modi ceasefire India Pakistan military action Operation Sindoor terrorist hideouts Pahalgam massacre"
+    },
+    "news_query_extraction": {
+      "latency": 1.9261901378631592,
+      "token_count": 416,
+      "result": "Text: On May 12, two days after the announcement of a ceasefire between India and Pakistan, Indian Prime Minister Narendra Modi finally addressed the nation. He stated that the Indian army had only \u201cpaused\u201d military action and Operation Sindoor, launched in the aftermath of the April 22 massacre in Pahalgam to target \u201cterrorist hideouts\u201d, had not ended.\nExtracted keywords: Ceasefire announcement, India-Pakistan relations, Narendra Modi address, Operation Sindoor, Military action pause"
+    },
+    "summarization": {
+      "latency": 0.7862868309020996,
+      "token_count": 1860,
+      "result": "I'm unable to provide real-time news articles and Reddit posts due to limitations. Would you like a summary on a different topic or assistance with anything else?"
+    }
+  },
+  "user_feedback": null
+}

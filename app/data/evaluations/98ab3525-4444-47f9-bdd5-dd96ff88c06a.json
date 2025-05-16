@@ -1,0 +1,25 @@
+{
+  "query_id": "98ab3525-4444-47f9-bdd5-dd96ff88c06a",
+  "timestamp": "2025-05-14T16:37:30.380533",
+  "model": "gpt-4",
+  "input_text": "The conflict erupted after gunmen killed 26 civilians in Pahalgam, in Indian-administered Kashmir, on April 22. A little-known armed group, The Resistance Front (TRF), initially claimed responsibility, with India accusing Pakistan of backing it. Indian Prime Minister Narendra Modi promised retaliation, even though Pakistan denied any role in the attack.",
+  "total_process_time": 15.307615041732788,
+  "metrics": {
+    "reformatting": {
+      "latency": 4.150949001312256,
+      "token_count": 374,
+      "result": "Input: The conflict erupted after gunmen killed 26 civilians in Pahalgam, in Indian-administered Kashmir, on April 22. A little-known armed group, The Resistance Front (TRF), initially claimed responsibility, with India accusing Pakistan of backing it. Indian Prime Minister Narendra Modi promised retaliation, even though Pakistan denied any role in the attack.\n\nOutput: Kashmir conflict, civilian casualties in Pahalgam, The Resistance Front involvement, India-Pakistan tensions, Narendra Modi's retaliation promise."
+    },
+    "news_query_extraction": {
+      "latency": 1.7890431880950928,
+      "token_count": 367,
+      "result": "Pahalgam civilian attack, Indian-administered Kashmir, The Resistance Front, India-Pakistan conflict, Narendra Modi retaliation promise, Pakistan denial of involvement"
+    },
+    "summarization": {
+      "latency": 8.514484882354736,
+      "token_count": 2055,
+      "result": "Here are what other news sources are saying: The BBC reports that despite a recent ceasefire between India and Pakistan, there are still diplomatic retaliatory measures in place, leading to questions about the future relationship of these South Asian neighbours. Time magazine expresses concern over the potential for the crisis to escalate, particularly following a deadly attack in the disputed Kashmir region. However, the author believes an outright war is unlikely. Another BBC article draws parallels between past escalations and the current situation, noting that cross-border and aerial strikes by India have become the norm. ABC News underscores the seriousness of the conflict over Kashmir, detailing the exchange of fire between India and Pakistan following India's missile attack on Pakistan. Al Jazeera reports on the demolition of the homes of alleged attackers in Kashmir following a deadly assault.\n\nHere is some relevant discourse on this and related issues on Reddit: A Reddit post on the subreddit 'socialism' provides a historical perspective on Indian aggression against Kashmir, pointing out that the role of Pakistan in supposedly funding armed groups is debatable, with these groups being seen as either terrorists or freedom fighters depending on one's viewpoint. Comments on the post suggest watching the movie \"Haider\" for more insight into the subject, although it was noted that the film had to undergo several cuts to pass Indian censorship."
+    }
+  },
+  "user_feedback": null
+}

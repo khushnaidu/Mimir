@@ -1,0 +1,25 @@
+{
+  "query_id": "acb73e99-54f8-454e-8a39-216e615327d1",
+  "timestamp": "2025-05-13T14:08:58.775419",
+  "model": "tinyllama-1.1b",
+  "input_text": "Could India, Pakistan use nuclear weapons? Here\u2019s what their doctrines say\nA full-blown war between India and Pakistan would be the first ever between two nuclear-armed nations.",
+  "total_process_time": 7.497084856033325,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.7523598670959473,
+      "token_count": 249,
+      "result": "India Pakistan nuclear weapons doctrines war nuclear-armed nations"
+    },
+    "news_query_extraction": {
+      "latency": 1.119415044784546,
+      "token_count": 321,
+      "result": "India, Pakistan, nuclear weapons, doctrines, full-blown war, nuclear-armed nations"
+    },
+    "summarization": {
+      "latency": 3.8544437885284424,
+      "token_count": 2341,
+      "result": "1. Here are what other news sources are saying:\n   - The US and Iran have engaged in a fourth round of talks regarding Tehran's nuclear program, with both sides expressing optimism and agreeing to continue discussions (BBC News). The negotiations were described as difficult but useful by Iran's Foreign Minister (BBC News).\n   - Two employees of Elon Musk's Department of Government Efficiency have been granted access to classified networks holding sensitive information about America's nuclear weapons, raising concerns about security (NPR).\n   - As Iran and the US prepare for a second round of high-stakes nuclear talks in Rome, hopes for progress are overshadowed by military threats and mixed messages (BBC News).\n   - Iran and the US are planning expert-level talks to delve into the details of a potential agreement on Tehran's advancing nuclear program, as announced by the top Iranian diplomat after a successful round of discussions (NPR).\n   - Former President Joe Biden expresses his concerns about the future of the Atlantic Alliance and criticizes his successor's rhetoric in an exclusive interview, questioning, \"What president ever talks like that?\" (BBC News).\n\n2. Here is some relevant discourse on this and related issues on Reddit:\n   - A post on r/neoliberal highlights the escalating tensions between India and Pakistan, particularly focusing on military attacks on bases in Kashmir. Commenters express worry about the situation, with one user emphasizing the gravity of the event and another highlighting the risks posed by both countries' possession of nuclear weapons.\n   - In another post on r/news, Pakistan's Army spokesperson claims that India fired ballistic missiles into Indian territory, adding fuel to the ongoing conflict. Commenters express fatigue over the prolonged conflict and criticize the justifications put forth by either side.\n\nThis multi-faceted summary provides insights into the ongoing nuclear talks between the US and Iran, security concerns regarding classified information access, the complexities of diplomatic negotiations amidst military threats, and the escalating tensions between India and Pakistan. The Reddit discussions reflect public apprehension and skepticism surrounding these geopolitical issues."
+    }
+  },
+  "user_feedback": null
+}

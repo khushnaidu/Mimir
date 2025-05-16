@@ -1,0 +1,25 @@
+{
+  "query_id": "c7520927-0962-43a4-86d9-5b0ef61ab8d7",
+  "timestamp": "2025-05-13T23:05:19.598487",
+  "model": "gpt-4",
+  "input_text": "On May 12, two days after the announcement of a ceasefire between India and Pakistan, Indian Prime Minister Narendra Modi finally addressed the nation. He stated that the Indian army had only \u201cpaused\u201d military action and Operation Sindoor, launched in the aftermath of the April 22 massacre in Pahalgam to target \u201cterrorist hideouts\u201d, had not ended.",
+  "total_process_time": 16.529295921325684,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.470189094543457,
+      "token_count": 299,
+      "result": "Input: The recent climate change report has some alarming findings about global warming\nOutput: Recent climate change report global warming findings"
+    },
+    "news_query_extraction": {
+      "latency": 1.645616054534912,
+      "token_count": 370,
+      "result": "India-Pakistan ceasefire, Narendra Modi, Indian army military action, Operation Sindoor, April 22 massacre in Pahalgam, terrorist hideouts"
+    },
+    "summarization": {
+      "latency": 11.320523977279663,
+      "token_count": 2199,
+      "result": "Here are what other news sources are saying: Recent articles from BBC News and NPR report on the escalating tensions between India and Pakistan, with each country accusing the other of violating a ceasefire agreement. This ceasefire was brokered following four days of cross-border attacks. The US has urged both nations to work together to de-escalate tensions after a deadly militant attack in Indian-administered Kashmir, an attack which India attributes to Pakistani-supported militants, a claim that Islamabad denies. The ceasefire initially seemed to hold, marking a pause in what some analysts have described as the most serious fighting since the 1971 war. However, overnight border skirmishes in the disputed Kashmir region have raised concerns about the ceasefire's stability.\n\nIn related global conflict news, BBC reports on talks in Kyiv, Ukraine, describing them as a 'significant moment' in efforts to secure a ceasefire in the ongoing conflict with Russia. Global leaders have urged Russia to agree to an unconditional 30-day ceasefire, warning of further sanctions if it does not comply.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the subreddit r/moderatepolitics discusses global warming, questioning whether it's time to rein back on doom-and-gloom narratives. Some users express frustration at the perceived lack of action from countries like China and India, while others criticize the impact of alarmist documentaries like Al Gore's \"An Inconvenient Truth\" on the public perception of climate change. This thread highlights the divisive nature of climate change discourse, reflecting a broader trend of polarization in discussions about global issues."
+    }
+  },
+  "user_feedback": null
+}

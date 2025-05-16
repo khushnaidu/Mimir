@@ -1,0 +1,25 @@
+{
+  "query_id": "94ac42a9-1205-4f57-a798-efb15bcb03a8",
+  "timestamp": "2025-05-13T12:46:51.485815",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Pahalgam attack in India-administered Kashmir and whip up war fervour.\n\n",
+  "total_process_time": 5.155094861984253,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.7503020763397217,
+      "token_count": 234,
+      "result": "Pahalgam attack India-administered Kashmir war fervour"
+    },
+    "news_query_extraction": {
+      "latency": 0.5483310222625732,
+      "token_count": 300,
+      "result": "Pahalgam attack, India-administered Kashmir, war fervour"
+    },
+    "summarization": {
+      "latency": 2.888425827026367,
+      "token_count": 2212,
+      "result": "1. Here are what other news sources are saying:\n   - The first BBC News article reports on India's response to an attack in Indian-administered Kashmir, where 26 people were killed by gunmen. India has taken measures targeting Pakistan, including the closure of the main border crossing and visa cancellations for Pakistanis. Tensions between the two countries have escalated following this incident.\n   - In another BBC News article, the US has urged India and Pakistan to work together to de-escalate tensions after the deadly militant attack in Kashmir. India accuses Pakistan of supporting militants behind the attack, which Pakistan denies.\n   - A video report from BBC News shows the aftermath of air strikes in Pakistan's Muridke, with the building targeted by India cordoned off by security forces.\n   - Additionally, an article from BBC News highlights the impact of the attack in Kashmir, with families mourning loved ones and expressing rage and despair over the tragic incident.\n\n2. Here is some relevant discourse on this and related issues on Reddit:\n   - A Reddit post discusses India's attack on Pakistani Kashmir, with users expressing concerns about the escalating conflict between the two nuclear powers. Some speculate about potential involvement of Taliban and China in the region, highlighting the complex geopolitical dynamics at play.\n   - Another Reddit post delves into the history of Indian aggression against Kashmir, emphasizing the role of both India and Pakistan in the conflict. The post explores the nuances of the situation, with differing perspectives on armed groups in the region being viewed as either terrorists or freedom fighters."
+    }
+  },
+  "user_feedback": null
+}

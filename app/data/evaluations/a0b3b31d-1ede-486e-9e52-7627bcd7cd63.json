@@ -1,0 +1,25 @@
+{
+  "query_id": "a0b3b31d-1ede-486e-9e52-7627bcd7cd63",
+  "timestamp": "2025-05-13T11:12:30.292799",
+  "model": "gpt-3.5-turbo",
+  "input_text": "\u201cNow, Operation Sindoor is India\u2019s policy against terrorism. Operation Sindoor has carved out a new benchmark in our fight against terrorism and has set up a new parameter and new normal,\u201d he said.",
+  "total_process_time": 5.097315073013306,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.6250958442687988,
+      "token_count": 256,
+      "result": "Operation Sindoor India terrorism policy benchmark fight against terrorism parameter normal"
+    },
+    "news_query_extraction": {
+      "latency": 0.9875879287719727,
+      "token_count": 325,
+      "result": "Text: \"The Prime Minister unveiled a new healthcare reform plan to address rising costs and improve access to medical services for all citizens.\"\nExtracted keywords: Prime Minister healthcare reform, rising costs, medical services access"
+    },
+    "summarization": {
+      "latency": 2.624379873275757,
+      "token_count": 2062,
+      "result": "Here are what other news sources are saying:\n1. The Daily Excelsior reported that India neutralized Pakistani drone and missile attacks, targeting air defense systems in Lahore. The article highlighted India's response to Pakistan's actions along the border and the destruction of terrorist infrastructure.\n2. The New York Times covered the escalation of attacks between India and Pakistan on military bases in Kashmir, emphasizing the potential risks of conflict between two nuclear-armed nations.\n3. Reuters detailed India's launch of attacks on 9 sites in Pakistan and Pakistan-occupied Jammu and Kashmir, citing Indian government statements on targeting terrorist infrastructure.\n\nHere is some relevant discourse on this and related issues on Reddit:\n1. Reddit users in the r/news subreddit discussed the recent events, with differing opinions on the outcomes of India's actions. Some users expressed skepticism about the neutralization of drones and missiles, while others justified India's targeting of terrorist facilities despite civilian casualties.\n2. In the r/neoliberal subreddit, discussions centered on the escalating tensions between India and Pakistan, with concerns raised about the implications of conflict between two populous countries armed with nuclear weapons.\n3. The r/moderatepolitics subreddit featured debates on the India-Pakistan conflict, with users analyzing the strategic implications of India's military strikes and speculating on potential responses from Pakistan. Perspectives varied on the potential consequences of further escalation in the region."
+    }
+  },
+  "user_feedback": null
+}

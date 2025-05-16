@@ -1,0 +1,25 @@
+{
+  "query_id": "224a4ca6-746d-4de9-b33f-582457bd1116",
+  "timestamp": "2025-05-14T16:57:33.943082",
+  "model": "gpt-4",
+  "input_text": "The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.",
+  "total_process_time": 14.448479175567627,
+  "metrics": {
+    "reformatting": {
+      "latency": 3.4593777656555176,
+      "token_count": 344,
+      "result": "Input: The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.\n\nOutput: Conflict in India-administered Kashmir, April 22 shooting attack, India-Pakistan relations, accusations of Pakistan's involvement."
+    },
+    "news_query_extraction": {
+      "latency": 2.003464937210083,
+      "token_count": 357,
+      "result": "April 22 shooting attack, Pahalgam area, India-administered Kashmir, Indian tourists killed, Nepalese visitor killed, India accuses Pakistan, Islamabad denial"
+    },
+    "summarization": {
+      "latency": 7.91783881187439,
+      "token_count": 1988,
+      "result": "Here are what other news sources are saying: Al Jazeera English reported on a wave of Islamophobic hate music targeting Indian Muslims that flooded social media following a violent attack in Kashmir on April 22. The attack killed 25 tourists and a local pony rider. In a separate incident, Business Insider reported widespread vandalism at Tesla dealerships across at least twelve states, including arson and gunfire incidents. Tensions between India and Pakistan escalated when India launched missile attacks on Pakistan and Pakistan-administered Kashmir, a retaliation to an attack in Kashmir's Pahalgam. This led to Pakistan test-firing a ballistic missile as fears of military escalation grew.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the \"socialism\" subreddit provided a historical perspective on Indian aggression against Kashmir. The author argued that the role of Pakistan in supposedly funding armed groups is debatable, as these groups can be seen as either terrorists or freedom fighters, depending on one's viewpoint. One commenter suggested watching the movie \"Haider\" for further insight into this issue, although another user warned that the Bollywood film may not depict the situation entirely truthfully."
+    }
+  },
+  "user_feedback": null
+}

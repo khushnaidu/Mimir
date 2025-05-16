@@ -1,0 +1,25 @@
+{
+  "query_id": "5d835f78-8978-4e35-807c-1a7bb4196e1b",
+  "timestamp": "2025-05-13T12:27:32.070745",
+  "model": "gpt-3.5-turbo",
+  "input_text": "India\u2019s \u2018new normal\u2019 of perpetual war will damage its democracy",
+  "total_process_time": 6.624022960662842,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.5925908088684082,
+      "token_count": 226,
+      "result": "Reformatted query: India perpetual war impact democracy"
+    },
+    "news_query_extraction": {
+      "latency": 1.0228049755096436,
+      "token_count": 287,
+      "result": "Text: UK Parliament votes on Brexit deal, Prime Minister faces backlash\nExtracted keywords: UK Parliament Brexit vote, Prime Minister backlash, European Union negotiations"
+    },
+    "summarization": {
+      "latency": 2.969857931137085,
+      "token_count": 1934,
+      "result": "Here are what other news sources are saying:\nUnfortunately, due to rate limitations on the news source API, I am unable to retrieve specific news articles at this time.\n\nHere is some relevant discourse on this and related issues on Reddit:\n1. Reddit Post Title: \"India-Pakistan: war only serves the rich \u2013 workers must unite!\"\n   - Author Marxist20 shared an article discussing how war between India and Pakistan primarily benefits the wealthy and calls for unity among workers.\n   - User Sudden_Negotiation71, an Indian, highlights obstacles to unity, including the influence of elites, hyper-nationalism, and religious extremism in both nations.\n   \n2. Reddit Post Title: \"Socialism and India's culture\"\n   - Author Ubermansch6969 raises questions about the limited influence of radical left parties in Indian politics compared to Europe.\n   - User OswaldReuben notes that India's shift to a service-based economy bypassed industrialization, impacting the reception of classical socialist ideas.\n   - User archosauria62 points out that socialist revolutions worldwide have often been led by individuals from privileged backgrounds, emphasizing the concept of the Mass Line.\n   - User karankia1 mentions Trotsky's theory of Permanent Revolution in relation to India's unique economic development challenges and the potential role of workers in driving progress.\n\nThese Reddit discussions reflect diverse perspectives on the challenges and dynamics of socialism and political movements in India, highlighting historical, economic, and social factors influencing political ideologies and activism."
+    }
+  },
+  "user_feedback": null
+}

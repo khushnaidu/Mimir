@@ -1,0 +1,25 @@
+{
+  "query_id": "fdf95114-db97-47dc-8131-979fc8f7778a",
+  "timestamp": "2025-05-13T12:30:22.498466",
+  "model": "gpt-3.5-turbo",
+  "input_text": "India\u2019s \u2018new normal\u2019 of perpetual war will damage its democracy",
+  "total_process_time": 6.395511865615845,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.5975821018218994,
+      "token_count": 226,
+      "result": "Reformatted query: India democracy perpetual war impact"
+    },
+    "news_query_extraction": {
+      "latency": 0.5319228172302246,
+      "token_count": 281,
+      "result": "Text: UK Prime Minister faces backlash over Brexit negotiations\nExtracted keywords: UK Prime Minister, Brexit negotiations, political backlash"
+    },
+    "summarization": {
+      "latency": 4.339684009552002,
+      "token_count": 2319,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News - UK edges towards youth visa deal with EU**: The UK government is considering a youth visa deal with the EU ahead of a summit to \"reset\" relations post-Brexit. Labour's stance on this issue has evolved, with previous indications of no plans for such a deal. This development reflects ongoing negotiations and potential shifts in policy post-Brexit.\n   \n2. **BBC News - Can UK-India trade deal mask Labour's problems at home?**: The UK government's trade deal with India is seen as having \"tangible benefits,\" but it comes amidst domestic challenges for the government. There are discussions about the government's claims of progress and speed in achieving its objectives, highlighting the complexity of balancing international trade deals with domestic issues.\n\n3. **Quartz India - Trump announces trade deal with the U.K.**: President Trump announced a trade deal between the US and the UK following tariffs imposed by the US. This agreement comes amid broader trade tensions globally, particularly with China, showcasing the complexities of international trade relations and their impacts on economies.\n\n4. **BBC News - A UK-US deal sounds good but it is all about the detail**: Vice-President JD Vance's positive comments on a potential UK-US trade deal raise questions about the specifics and implications of such an agreement. The focus is on understanding the terms and conditions of the deal, indicating the importance of details in shaping trade relationships.\n\n5. **International Business Times - EU Wins Post-Brexit Fishing Row With Britain**: The European Union secured a victory over Britain in a post-Brexit fishing rights dispute at an arbitration body. This case highlights ongoing tensions and legal disputes post-Brexit, emphasizing the complexities of negotiating trade agreements and resolving disagreements.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **India-Pakistan: war only serves the rich \u2013 workers must unite!**: A Reddit post discussing the impact of war between India and Pakistan on the working class, emphasizing the need for solidarity among workers. Comments highlight the role of elites, nationalism, and religious extremism in hindering unity and potentially leading to conflicts unless addressed.\n\n2. **Socialism and India's culture**: A post questioning the influence of radical left parties in Indian politics compared to Europe, citing historical figures like Gandhi mobilizing masses instead of the left. The discussion delves into the dynamics of socialist movements in India and their historical context, raising questions about the role of the radical left in shaping Indian politics."
+    }
+  },
+  "user_feedback": null
+}

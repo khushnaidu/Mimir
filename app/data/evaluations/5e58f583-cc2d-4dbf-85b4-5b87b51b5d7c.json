@@ -1,0 +1,25 @@
+{
+  "query_id": "5e58f583-cc2d-4dbf-85b4-5b87b51b5d7c",
+  "timestamp": "2025-05-13T14:00:28.076067",
+  "model": "tinyllama-1.1b",
+  "input_text": "India has long accused The Resistance Front (TRF) \u2013 the armed group that initially claimed credit for the Pahalgam attack, before then distancing itself from the killings \u2013 of being a proxy for the Lashkar-e-Taiba, a Pakistan-based armed group that has repeatedly targeted India, including in the 2008 Mumbai attacks that left more than 160 people dead.",
+  "total_process_time": 7.3885719776153564,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.7365350723266602,
+      "token_count": 308,
+      "result": "India accuses The Resistance Front (TRF) of being a proxy for Lashkar-e-Taiba, a Pakistan-based armed group targeting India."
+    },
+    "news_query_extraction": {
+      "latency": 1.182082176208496,
+      "token_count": 380,
+      "result": "India, The Resistance Front, TRF, Pahalgam attack, Lashkar-e-Taiba, Pakistan-based armed group, 2008 Mumbai attacks, India-Pakistan relations"
+    },
+    "summarization": {
+      "latency": 3.683342933654785,
+      "token_count": 2220,
+      "result": "Here are what other news sources are saying:\n\n1. **The Verge** reports on the release of the Kindle Colorsoft Signature Edition, Amazon's first color e-reader, currently on sale with a $55 discount. The device, built with E Ink's color display technology, enhances the reading experience for comics, magazines, children's books, and illustrated novels. The article emphasizes the value proposition of the Colorsoft for Kindle book owners.\n\n2. **BBC News** covers the ongoing conflict in Myanmar, where the army's ceasefire pledge following a devastating earthquake has been repeatedly violated. The article highlights the tragic consequences of military attacks on a rebel-held area, including civilian casualties despite the supposed cessation of hostilities.\n\n3. **CNET** provides insights into the benefits of squats as an exercise, emphasizing the importance of proper form for maximizing muscle engagement. The article offers tips from personal trainers on achieving the best results from squats and underlines the significance of correct technique.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\nA post on **neoliberal** subreddit titled \"Pakistan\u2019s Most Powerful Man Steps Out of the Shadows to Confront India\" discusses Asim Munir, the Pakistan Army Chief, and his recent statements regarding the two-nation theory and the ongoing tensions with India. Comments express varying views on Munir's approach, with some criticizing his stance on conflict escalation and connections to previous military actions, while others speculate on potential diplomatic solutions involving key political figures like Modi and Trump. The discussion delves into the complex dynamics of regional geopolitics and historical ideologies shaping the current situation."
+    }
+  },
+  "user_feedback": null
+}

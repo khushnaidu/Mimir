@@ -1,0 +1,25 @@
+{
+  "query_id": "033cce66-b0f8-453a-b65b-047eedd6eb70",
+  "timestamp": "2025-05-13T16:34:41.268119",
+  "model": "gpt-4",
+  "input_text": "The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.",
+  "total_process_time": 17.149634838104248,
+  "metrics": {
+    "reformatting": {
+      "latency": 4.074235916137695,
+      "token_count": 344,
+      "result": "Input: The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.\n\nOutput: Conflict in India-administered Kashmir, April 22 shooting attack, India-Pakistan relations, accusations of Pakistani government involvement."
+    },
+    "news_query_extraction": {
+      "latency": 1.6536979675292969,
+      "token_count": 351,
+      "result": "April 22 shooting attack, Pahalgam area, India-administered Kashmir, Indian tourists killed, Pakistan government accused, Islamabad denial"
+    },
+    "summarization": {
+      "latency": 10.697762727737427,
+      "token_count": 2007,
+      "result": "Here are what other news sources are saying: Al Jazeera English reported on a surge of Islamophobic music tracks targeting Indian Muslims following an attack in the Indian-administered Kashmir region, killing 25 tourists and a local pony rider. In another report, Al Jazeera noted that India carried out strikes against Pakistan, known as Operation Sindoor, two weeks after the Kashmir attack. The significance of the targets in Pakistan and Pakistan-administered Kashmir was also discussed. Amid these tensions, Pakistan test-fired a ballistic missile. On a different note, Business Insider reported on a series of suspected vandalism at Tesla dealerships spanning across at least a dozen states, involving graffiti, arson, and gunfire.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the subreddit 'socialism' by user Ali_Is_The_GOAT discussed the history of Indian aggression against Kashmir, describing it as a form of imperialism. The post mentioned the debate over armed groups allegedly funded by Pakistan, which are seen as terrorists by supporters of the Indian regime and freedom fighters by others. Top comments included a recommendation to watch the movie \"Haider\" for an exploration of the subject, and a discussion on the accuracy of Bollywood depictions of the Kashmir conflict."
+    }
+  },
+  "user_feedback": null
+}

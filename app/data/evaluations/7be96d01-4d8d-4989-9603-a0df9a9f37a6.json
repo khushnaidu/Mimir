@@ -1,0 +1,25 @@
+{
+  "query_id": "7be96d01-4d8d-4989-9603-a0df9a9f37a6",
+  "timestamp": "2025-05-13T23:07:06.233071",
+  "model": "gpt-3.5-turbo",
+  "input_text": "On May 12, two days after the announcement of a ceasefire between India and Pakistan, Indian Prime Minister Narendra Modi finally addressed the nation. He stated that the Indian army had only \u201cpaused\u201d military action and Operation Sindoor, launched in the aftermath of the April 22 massacre in Pahalgam to target \u201cterrorist hideouts\u201d, had not ended.",
+  "total_process_time": 4.499640941619873,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.574566125869751,
+      "token_count": 297,
+      "result": "Indian Prime Minister Narendra Modi ceasefire India Pakistan military action Operation Sindoor terrorist hideouts Pahalgam massacre"
+    },
+    "news_query_extraction": {
+      "latency": 0.6125640869140625,
+      "token_count": 368,
+      "result": "Indian-Pakistani ceasefire, Narendra Modi address, Indian army military action, Operation Sindoor, Pahalgam massacre, terrorist hideouts"
+    },
+    "summarization": {
+      "latency": 2.4591009616851807,
+      "token_count": 2018,
+      "result": "1. Here are what other news sources are saying:\n   - India and Pakistan have accused each other of violations shortly after agreeing to a ceasefire following days of cross-border military strikes. Both nations traded accusations of breaching the ceasefire deal brokered to halt the conflict in the disputed Kashmir region. The situation remains tense with reports of overnight fighting shaking the ceasefire but holding for a second day afterward. The US has urged both countries to work together to de-escalate tensions and prevent further violence.\n   \n2. Here is some relevant discourse on this and related issues on Reddit:\n   - A Reddit post titled \"My Country is becoming Fascist\" discusses concerns about the rise of right-wing ideology in Indian politics, especially among older generations and youth. The post highlights the impact of online propaganda in radicalizing young people and fostering intolerance towards marginalized groups. Users engage in discussions about fascism on a global scale and call for unity against oppressive systems. The discourse reflects a critical view of the political climate in India and raises awareness about the dangers of extremist ideologies."
+    }
+  },
+  "user_feedback": null
+}

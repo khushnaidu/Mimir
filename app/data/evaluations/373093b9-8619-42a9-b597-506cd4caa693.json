@@ -1,0 +1,25 @@
+{
+  "query_id": "373093b9-8619-42a9-b597-506cd4caa693",
+  "timestamp": "2025-05-13T16:36:20.225880",
+  "model": "gpt-4",
+  "input_text": "President Donald Trump and Crown Prince Mohammed bin Salman signed multiple agreements during Trump's visit to Saudi Arabia, including a significant defense deal worth nearly $142 billion and a broader investment commitment of $600 billion from Saudi Arabia into the U.S. Trump's speech emphasized peace through economic partnerships rather than military intervention, suggesting a shift in U.S. foreign policy approach towards the Middle East. Additionally, Trump announced the lifting of sanctions on Syria, stirring various reactions regarding the strategic implications.",
+  "total_process_time": 16.241386890411377,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.5743322372436523,
+      "token_count": 350,
+      "result": "Trump and Mohammed bin Salman agreements during Saudi Arabia visit, including $142 billion defense deal and $600 billion Saudi investment in U.S. Shift in U.S. foreign policy towards economic partnerships in Middle East. Lifting of sanctions on Syria by Trump and strategic implications."
+    },
+    "news_query_extraction": {
+      "latency": 1.4188830852508545,
+      "token_count": 386,
+      "result": "President Donald Trump, Crown Prince Mohammed bin Salman, Saudi Arabia agreements, defense deal, economic partnerships, lifting of sanctions on Syria"
+    },
+    "summarization": {
+      "latency": 11.361165046691895,
+      "token_count": 2112,
+      "result": "Here are what other news sources are saying: President Donald Trump has proposed a 100% tariff on films shot in foreign countries, according to The Verge. This comes amidst various other tariff impositions, including on clothing and avocados. In another article from The Verge, it is reported that Trump is considering deporting US citizens to a megaprison in El Salvador, an unprecedented move that has raised eyebrows. Wired reports that the Federal Communications Commission (FCC), under its new chairman Brendan Carr, is seen to be pushing Trump's agenda, causing concerns about potential censorship. BBC News highlights that Trump's influence is even being felt overseas, notably affecting Australia's election discourse. Lastly, The Verge also reports that Trump has signed a memorandum directing the Department of Energy to consider rescinding or weakening regulations for water and energy efficiency for household appliances.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on the 'neoliberal' subreddit discusses Syria's attempt to get U.S. help on sanctions by offering oil and peace. The top comments reflect a mixed response to this, with some expressing concern over Syria's intentions and others lamenting that the situation didn't unfold under a Democratic administration. There's also a discussion about China's approach to aid, which some users argue is more about loans than actual assistance."
+    }
+  },
+  "user_feedback": null
+}

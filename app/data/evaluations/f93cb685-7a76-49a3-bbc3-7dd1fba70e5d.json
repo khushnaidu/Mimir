@@ -1,0 +1,25 @@
+{
+  "query_id": "f93cb685-7a76-49a3-bbc3-7dd1fba70e5d",
+  "timestamp": "2025-05-15T12:25:05.956881",
+  "model": "gpt-4",
+  "input_text": "The fighting followed an April 22 rebel attack on Pahalgam, in Indian-administered Kashmir, that New Delhi blamed on Pakistan \u2013 an accusation Islamabad denied.",
+  "total_process_time": 23.064921140670776,
+  "metrics": {
+    "reformatting": {
+      "latency": 4.936956882476807,
+      "token_count": 294,
+      "result": "Input: The fighting followed an April 22 rebel attack on Pahalgam, in Indian-administered Kashmir, that New Delhi blamed on Pakistan \u2013 an accusation Islamabad denied.\nOutput: Rebel attack in Indian-administered Kashmir, New Delhi's blame on Pakistan, Islamabad's denial."
+    },
+    "news_query_extraction": {
+      "latency": 1.963083028793335,
+      "token_count": 325,
+      "result": "April 22 rebel attack, Pahalgam, Indian-administered Kashmir, New Delhi, Pakistan, international conflict"
+    },
+    "summarization": {
+      "latency": 15.302962064743042,
+      "token_count": 2145,
+      "result": "Here are what other news sources are saying: Al Jazeera reports the Pahalgam attack in Indian-administered Kashmir has raised questions about the continued detention of Kashmiri political prisoners. There was hope that last year's regional assembly election would lead to their release, but the April 22 killings and subsequent crackdown by Indian forces have crushed this optimism. The attack has also challenged Prime Minister Narendra Modi's narrative that Kashmir was returning to normalcy. Al Jazeera also covers India's missile attacks on targets in Pakistan and Pakistan-administered Kashmir, known as Operation Sindoor, following the Pahalgam attack. As tensions rise between India and Pakistan, Kashmiris live in fear and uncertainty. Meanwhile, ABC News (AU) reports on an unrelated incident involving three Americans allegedly conspiring to overthrow the government in the Democratic Republic of Congo.\n\nHere is some relevant discourse on this and related issues on Reddit: A post on r/news about India attacking Pakistan and Pakistani Kashmir has garnered significant attention. Some users express concern about the escalating conflict between the two nuclear powers, noting the potential for opportunistic attacks from Taliban forces in the north. Others comment on the geopolitical implications, including heightened tensions between China and India. Another post provides a historical perspective on Indian aggression against Kashmir, highlighting the ongoing complexities of this geopolitical issue."
+    }
+  },
+  "user_feedback": null
+}

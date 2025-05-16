@@ -1,0 +1,25 @@
+{
+  "query_id": "50739fc3-d487-4f48-afbb-ed0c65f24290",
+  "timestamp": "2025-05-13T16:30:47.326666",
+  "model": "gpt-3.5-turbo",
+  "input_text": "India expels Pakistan diplomat as war of words simmers in place of fighting",
+  "total_process_time": 7.413938999176025,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.1905500888824463,
+      "token_count": 227,
+      "result": "India expels Pakistan diplomat amid escalating tensions"
+    },
+    "news_query_extraction": {
+      "latency": 0.5597879886627197,
+      "token_count": 299,
+      "result": "India expels Pakistan diplomat, war of words, simmering tensions, diplomatic relations"
+    },
+    "summarization": {
+      "latency": 4.596411943435669,
+      "token_count": 2315,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News**:\n   - The pace of diplomatic efforts to end the war in Ukraine is quickening, with negotiations involving officials from the UK, Germany, France, Ukraine, and the United States. However, the proposals put forward by Trump's team still have major gaps.\n   - Source: [BBC News](https://www.bbc.com/news/articles/c70znjwezd4o)\n\n2. **BBC News**:\n   - Israel's army under Prime Minister Benjamin Netanyahu's leadership plans to capture and hold territory, which could have significant implications. This offensive approach risks further division within Israel, casualties among Palestinians, and international condemnation.\n   - Source: [BBC News](https://www.bbc.com/news/articles/cd020j97l79o)\n\n3. **The Verge**:\n   - A review of the second season of \"Andor\" on Disney Plus, which delves into the political undertones of the Star Wars franchise. The show explores themes of rebellion against oppressive regimes and the struggle for freedom.\n   - Source: [The Verge](https://www.theverge.com/tv-reviews/652050/andor-season-2-review-star-wars-disney-plus)\n\n4. **Gizmodo.com**:\n   - Reflecting on the 20th anniversary of the revitalization of the Daleks in Doctor Who, highlighting the impact of this iconic episode on the series.\n   - Source: [Gizmodo.com](https://gizmodo.com/doctor-who-dalek-20th-anniversary-christopher-eccleston-2000596479)\n\n5. **Time**:\n   - Analysis of the frequent mention of \"Biden\" in public remarks during the Trump White House era, showcasing the continued focus on President Joe Biden by former President Donald Trump.\n   - Source: [Time](https://time.com/7282831/donald-trump-joe-biden-most-frequent-words/)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Reddit (neoliberal)**:\n   - Discussion on Pakistan's army chief Asim Munir's stance on the two-nation theory and the ongoing tensions with India. Some users express concerns about his hardline approach and ties to Islamist ideologies, while others speculate on potential diplomatic actions between India and Pakistan.\n   - Source: [Reddit Post](https://www.nytimes.com/2025/05/05/world/asia"
+    }
+  },
+  "user_feedback": null
+}

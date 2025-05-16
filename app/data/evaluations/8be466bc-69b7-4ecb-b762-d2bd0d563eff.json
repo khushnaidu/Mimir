@@ -1,0 +1,25 @@
+{
+  "query_id": "8be466bc-69b7-4ecb-b762-d2bd0d563eff",
+  "timestamp": "2025-05-13T10:13:24.747453",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Tensions rise between authorities and protesters outside ICE detention center",
+  "total_process_time": 6.945048093795776,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.5669600963592529,
+      "token_count": 226,
+      "result": "Reformatted query: \nICE detention center protests authorities tensions"
+    },
+    "news_query_extraction": {
+      "latency": 0.7152600288391113,
+      "token_count": 285,
+      "result": "Text: UK Parliament votes on Brexit deal, Prime Minister faces backlash\nExtracted keywords: UK Parliament Brexit vote, Prime Minister backlash, European Union negotiations"
+    },
+    "summarization": {
+      "latency": 4.989037036895752,
+      "token_count": 2375,
+      "result": "Here are what other news sources are saying:\n\n1. **Labour minister sorry over grooming gangs remark** (Source: BBC News)\n   Leader of the House of Commons Lucy Powell has sought to clarify comments she made in a radio debate where she appeared to describe grooming gangs as a \"dog whistle\" issue, facing backlash from political opponents.\n\n2. **Why Canadians Are Nervous About Carney\u2019s Visit With Trump** (Source: Time)\n   Canada's newly-elected Prime Minister faces high stakes with Donald Trump over trade, tariffs, and sovereignty, amid concerns about the outcome of meetings between President Trump and foreign leaders.\n\n3. **Why Carney's Liberals won - and the Conservatives lost** (Source: BBC News)\n   Mark Carney's Liberals are projected to have won Canada's federal election, riding a backlash of anti-Trump sentiment to form the next government, while his rivals made gains but still fell short.\n\n4. **Donald Trump is looming over Australia's election** (Source: BBC News)\n   Foreign policy becomes a significant factor in Australia's poll due to the influence of US President Donald Trump, impacting the dynamics of the election in unexpected ways.\n\n5. **Maddow Blog | It\u2019s not just Canada: An anti-Trump backlash helps fuel Labor Party win in Australia** (Source: MSNBC)\n   Opposition to Donald Trump played a significant role in propelling a center-left party to victory in Canada, with similar circumstances unfolding in Australia, showcasing the global impact of anti-Trump sentiments.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Hundreds of Jewish Activists Surround ICE Office to Protest Detention Centers**\n   - Jewish activists protest detention centers, sparking discussions on differing ideologies within nations.\n   \n2. **Hundreds of anti-ICE protesters demonstrate outside home of Aurora detention center chief**\n   - Anti-ICE protesters gather outside the home of an Aurora detention center chief, prompting varied reactions within the community.\n\n3. **ICE releases N.J. mayor after dramatic arrest at immigrant detention facility protest**\n   - A New Jersey mayor is released by ICE after a dramatic arrest at an immigrant detention facility protest, raising concerns about immigration policies and enforcement actions."
+    }
+  },
+  "user_feedback": null
+}

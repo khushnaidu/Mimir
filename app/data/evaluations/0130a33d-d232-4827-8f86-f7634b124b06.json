@@ -1,0 +1,25 @@
+{
+  "query_id": "0130a33d-d232-4827-8f86-f7634b124b06",
+  "timestamp": "2025-05-14T16:35:52.785821",
+  "model": "gpt-3.5-turbo",
+  "input_text": "The conflict erupted after gunmen killed 26 civilians in Pahalgam, in Indian-administered Kashmir, on April 22. A little-known armed group, The Resistance Front (TRF), initially claimed responsibility, with India accusing Pakistan of backing it. Indian Prime Minister Narendra Modi promised retaliation, even though Pakistan denied any role in the attack.",
+  "total_process_time": 6.452564001083374,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.46097993850708,
+      "token_count": 314,
+      "result": "Conflict in Indian-administered Kashmir, gunmen kill civilians in Pahalgam, The Resistance Front (TRF) claims responsibility, India accuses Pakistan, Prime Minister Narendra Modi promises retaliation, Pakistan denies involvement."
+    },
+    "news_query_extraction": {
+      "latency": 0.6162278652191162,
+      "token_count": 370,
+      "result": "Conflict, gunmen, civilians killed, Pahalgam, Indian-administered Kashmir, The Resistance Front (TRF), India, Pakistan, Narendra Modi, retaliation"
+    },
+    "summarization": {
+      "latency": 3.3320960998535156,
+      "token_count": 2206,
+      "result": "1. Here are what other news sources are saying:\n   - The first article from BBC News discusses a man accused of killing an Alawite during sectarian violence in Syria, who claims that armed civilians were overseen by government forces. This highlights the complex dynamics and involvement of security forces in the violence.\n   - The second article covers Ukraine's allies condemning Russia over a deadly missile attack in Sumy, emphasizing the strong condemnation from Western allies and the ongoing tensions in the region.\n   - The third article showcases the eerie silence in Indian-administered Kashmir due to closed airports, shedding light on the impact of the situation on daily life in the region.\n   - The fourth article reports on President Trump's statement blaming both Ukrainian President Zelensky and Russian President Putin for the casualties in the Ukraine war, adding a new dimension to the discourse on the conflict.\n   - The fifth article discusses the suspension of the Indian Premier League for one week amid tensions between India and Pakistan, reflecting the broader geopolitical implications of sports in the region.\n\n2. Here is some relevant discourse on this and related issues on Reddit:\n   - A Reddit post on the history of Indian aggression against Kashmir sparks a discussion on the role of India and Pakistan in the region. The post delves into the complexities of the occupation, with varying perspectives on armed groups as either terrorists or freedom fighters.\n   - Comments on the post recommend watching the movie \"Haider\" to understand the Kashmir conflict better, highlighting the cultural representations of the issue.\n   - There are discussions on the censorship and cuts made to the movie \"Haider\" for it to be released, offering insights into the challenges of portraying sensitive political topics in media.\n   - The thread provides a platform for users to share their perspectives on the Kashmir conflict, engaging in nuanced debates around historical imperialism and contemporary geopolitical tensions."
+    }
+  },
+  "user_feedback": null
+}

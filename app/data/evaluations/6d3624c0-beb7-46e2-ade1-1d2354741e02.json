@@ -1,0 +1,25 @@
+{
+  "query_id": "6d3624c0-beb7-46e2-ade1-1d2354741e02",
+  "timestamp": "2025-05-13T11:02:33.311307",
+  "model": "mistral-7b",
+  "input_text": "On May 12, two days after the announcement of a ceasefire between India and Pakistan, Indian Prime Minister Narendra Modi finally addressed the nation. He stated that the Indian army had only \u201cpaused\u201d military action and Operation Sindoor, launched in the aftermath of the April 22 massacre in Pahalgam to target \u201cterrorist hideouts\u201d, had not ended.",
+  "total_process_time": 0.9236040115356445,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.19226384162902832,
+      "token_count": null,
+      "result": "Error processing request with mistral-7b. Please try another model."
+    },
+    "news_query_extraction": {
+      "latency": 0.10085773468017578,
+      "token_count": null,
+      "result": "Error processing request with mistral-7b. Please try another model."
+    },
+    "summarization": {
+      "latency": 0.11950302124023438,
+      "token_count": null,
+      "result": "Error processing request with mistral-7b. Please try another model."
+    }
+  },
+  "user_feedback": null
+}

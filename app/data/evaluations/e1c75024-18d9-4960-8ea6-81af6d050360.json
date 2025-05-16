@@ -1,0 +1,25 @@
+{
+  "query_id": "e1c75024-18d9-4960-8ea6-81af6d050360",
+  "timestamp": "2025-05-14T16:38:00.502237",
+  "model": "tinyllama-1.1b",
+  "input_text": "The conflict erupted after gunmen killed 26 civilians in Pahalgam, in Indian-administered Kashmir, on April 22. A little-known armed group, The Resistance Front (TRF), initially claimed responsibility, with India accusing Pakistan of backing it. Indian Prime Minister Narendra Modi promised retaliation, even though Pakistan denied any role in the attack.",
+  "total_process_time": 8.194401979446411,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.505528688430786,
+      "token_count": 315,
+      "result": "Conflict in Indian-administered Kashmir, gunmen kill civilians in Pahalgam, The Resistance Front (TRF) claims responsibility, India accuses Pakistan, Prime Minister Narendra Modi promises retaliation, Pakistan denies involvement."
+    },
+    "news_query_extraction": {
+      "latency": 1.0080242156982422,
+      "token_count": 371,
+      "result": "Conflict, gunmen, civilians, Pahalgam, Indian-administered Kashmir, The Resistance Front (TRF), India, Pakistan, Narendra Modi, retaliation, attack."
+    },
+    "summarization": {
+      "latency": 3.75160813331604,
+      "token_count": 2307,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News - \"Watch: Airports closed, eerie silence in Indian-administered Kashmir\"**\n   - The article highlights the deserted streets in Srinagar, Indian-administered Kashmir, as all civilian flights in and out of the region have been suspended.\n   - This situation reflects the heightened tensions and security concerns in the region.\n\n2. **BBC News - \"Why India and Pakistan fight over Kashmir\"**\n   - The piece delves into the longstanding dispute over Kashmir between India and Pakistan, rooted in diverse opinions within the territory about its governance.\n   - It discusses the historical context and the differing aspirations of Kashmiris for independence or union with Pakistan.\n\n3. **BBC News - \"India closes main border crossing with Pakistan after Kashmir attack\"**\n   - Following an attack in Indian-administered Kashmir that resulted in casualties, India has taken measures targeting Pakistan, including the closure of the main border crossing.\n   - This action escalates tensions between the two countries and underscores the volatile nature of the Kashmir conflict.\n\n4. **BBC News - \"IPL suspended for one week over safety concerns\"**\n   - The Indian Premier League has been suspended for a week due to ongoing tensions between India and Pakistan, with India accusing Pakistan of attacking its military bases.\n   - This development reflects how political tensions can impact sporting events and activities in the region.\n\n5. **BBC News - \"US urges India and Pakistan to defuse tensions after Kashmir killings\"**\n   - The US has called for India and Pakistan to collaborate in de-escalating tensions following a militant attack in Kashmir, which India attributes to Pakistani support.\n   - International pressure mounts for both countries to address the conflict peacefully.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n- **Reddit Post - \"A history of Indian aggression against Kashmir\"**\n  - The post delves into the historical context of Indian aggression in Kashmir, shedding light on the complex dynamics of the conflict.\n  - It discusses the role of both India and Pakistan, highlighting differing perspectives on armed groups as either terrorists or freedom fighters.\n  - Users engage in discussions about the portrayal of Kashmir in media and films, such as the movie \"Haider,\" which touches upon the Kashmir conflict.\n\nThis comprehensive overview provides insights into the multifaceted nature of the Kashmir conflict, encompassing political, social, and international dimensions."
+    }
+  },
+  "user_feedback": null
+}

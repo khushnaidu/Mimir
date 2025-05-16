@@ -24,27 +24,7 @@ class RAGPipeline:
             reformatted_query = user_text  # Fallback to original text
             
         # Step 2: Search vector store for similar posts
-        try:
-            # Check if vector store has data
-            if not hasattr(self.vector_store, 'embeddings') or self.vector_store.embeddings is None:
-                logger.warning("Vector store has no embeddings. Loading data...")
-                self.vector_store.load_data()
-                
-            if not hasattr(self.vector_store, 'embeddings') or self.vector_store.embeddings is None:
-                logger.error("Vector store failed to load embeddings")
-                similar_posts = []
-            else:
-                logger.info(f"Searching vector store with query: {reformatted_query}")
-                similar_posts = self.vector_store.search(reformatted_query)
-                logger.info(f"Found {len(similar_posts)} similar posts")
-                
-                # Log a sample of post titles
-                if similar_posts:
-                    titles = [post.get('title', 'No title') for post in similar_posts[:3]]
-                    logger.info(f"Sample titles: {', '.join(titles)}")
-        except Exception as e:
-            logger.error(f"Error searching vector store: {str(e)}")
-            similar_posts = []
+        similar_posts = await self.search_vector_store(reformatted_query)
             
         # Step 3: Extract news search queries
         try:
@@ -59,3 +39,22 @@ class RAGPipeline:
             'similar_posts': similar_posts,
             'news_queries': news_queries
         }
+        
+    async def search_vector_store(self, reformatted_query):
+        """Search vector store for similar posts"""
+        try:
+            # Check if vector store has data
+            if not hasattr(self.vector_store, 'embeddings') or self.vector_store.embeddings is None:
+                logger.warning("Vector store has no embeddings. Loading data...")
+                self.vector_store.load_data()
+                
+            if not hasattr(self.vector_store, 'embeddings') or self.vector_store.embeddings is None:
+                logger.error("Vector store failed to load embeddings")
+                return []
+            else:
+                similar_posts = self.vector_store.search(reformatted_query)
+                logger.info(f"Found {len(similar_posts)} similar posts")
+                return similar_posts
+        except Exception as e:
+            logger.error(f"Error searching vector store: {str(e)}")
+            return []

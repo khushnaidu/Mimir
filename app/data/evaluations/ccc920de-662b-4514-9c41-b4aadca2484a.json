@@ -1,0 +1,25 @@
+{
+  "query_id": "ccc920de-662b-4514-9c41-b4aadca2484a",
+  "timestamp": "2025-05-13T23:07:57.285026",
+  "model": "tinyllama-1.1b",
+  "input_text": "Earlier today Trump claimed that he used trade in order to get India and Pakistan to stop their war.\n\nIndia just contradicted him, saying that there was \"no mention of trade in talks during Operation Sindoor\" and \"trade wasn\u2019t discussed.\"",
+  "total_process_time": 6.218847990036011,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.9686310291290283,
+      "token_count": 269,
+      "result": "Trump trade claim India Pakistan war\nIndia contradicts Trump trade war talks Operation Sindoor"
+    },
+    "news_query_extraction": {
+      "latency": 0.955733060836792,
+      "token_count": 329,
+      "result": "Trump, trade, India, Pakistan, war, Operation Sindoor"
+    },
+    "summarization": {
+      "latency": 2.31113600730896,
+      "token_count": 2060,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News**: The Indian Premier League has been suspended for one week due to ongoing tensions between India and Pakistan. India accused Pakistan of attacking its military bases, leading to the suspension of the league.\n   \n2. **NPR**: India launched missile strikes in several parts of Pakistan and Pakistan-controlled territory, escalating tensions between the two nuclear-armed rivals.\n\n3. **Slashdot.org**: SpaceX has received approval to sell Starlink services in India following new regulations by the Indian government.\n\n4. **Business Insider**: India and Pakistan are engaged in conflict using foreign-made fighter jets, with Pakistan claiming to have shot down five Indian fighter jets.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Reddit Politics Post**: A post discussing Trump's offer to help relieve conflict between India and Pakistan. Comments reflect skepticism towards Trump's ability to mediate effectively, drawing comparisons to past diplomatic efforts. Some users express reluctance towards involving Trump in the conflict resolution process."
+    }
+  },
+  "user_feedback": null
+}

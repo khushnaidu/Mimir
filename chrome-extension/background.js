@@ -22,7 +22,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     fetch("http://127.0.0.1:5000/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: request.text })
+      body: JSON.stringify({
+        text: request.text,
+        model: request.model || "gpt-3.5-turbo",
+        collect_feedback: true
+      })
     })
       .then(res => {
         if (!res.ok) {

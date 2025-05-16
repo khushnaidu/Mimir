@@ -1,0 +1,25 @@
+{
+  "query_id": "9a2609a8-79bc-48ca-8377-ff7e6b583b98",
+  "timestamp": "2025-05-13T10:36:19.441697",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Israel expects 50% of Gaza\u2019s people to flee during full-scale assault",
+  "total_process_time": 8.138766288757324,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.7165122032165527,
+      "token_count": 229,
+      "result": "Reformatted query: Gaza population displacement Israeli military operation"
+    },
+    "news_query_extraction": {
+      "latency": 0.8988919258117676,
+      "token_count": 290,
+      "result": "Text: Israel expects 50% of Gaza\u2019s people to flee during full-scale assault\n\nExtracted keywords: Israel Gaza assault, displacement crisis, conflict escalation"
+    },
+    "summarization": {
+      "latency": 5.621354103088379,
+      "token_count": 2440,
+      "result": "Here are what other news sources are saying:\n\n1. NPR reported on the two-year civil war in Sudan, highlighting the catastrophic impact on the country, with ongoing violence and humanitarian crisis. The conflict has led to a significant loss of life and displacement, with paramilitary groups escalating attacks on refugees in aid camps.\n   Source: [NPR - Photos: Two years of war in Sudan](https://www.npr.org/2025/04/15/g-s1-60348/photos-two-years-of-war-in-sudan)\n\n2. Another NPR article discusses the recent attacks on famine-hit displacement camps in Sudan by the Rapid Support Forces, resulting in hundreds of deaths. The situation in Darfur remains volatile as violence escalates, despite peace talks being held in London.\n   Source: [NPR - In Sudan, hundreds killed in attacks on famine-hit displacement camps](https://www.npr.org/2025/04/14/nx-s1-5363700/in-sudan-hundreds-killed-in-attacks-on-famine-hit-displacement-camps)\n\n3. Additionally, NPR covered the ongoing civil war in Sudan, now entering its third year with no signs of slowing down. Peace talks, although taking place in London, lack the main protagonists, while violence in Darfur intensifies, particularly with paramilitary attacks on refugees.\n   Source: [NPR - Sudan's war is 2 years in and shows no signs of slowing, as talks take place](https://www.npr.org/2025/04/15/g-s1-60340/sudan-civil-war-peace-talks)\n\n4. Al Jazeera English reported on a fire that ravaged a displacement camp in Darfur, destroying over 50 homes. This incident adds to the challenges faced by Sudan as it grapples with the escalating war and displacement crisis.\n   Source: [Al Jazeera English - Fire guts Darfur camp amid escalating Sudan war](https://www.aljazeera.com/program/newsfeed/2025/4/17/fire-guts-darfur-camp-amid-escalating-sudan-war)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\nReddit users discussed the Israeli strikes in Gaza, which have severely impacted the region's health services. Comments highlighted the destruction caused by the bombings, including targeting essential facilities like a COVID testing lab. There were also criticisms of international involvement and historical agreements contributing to conflicts in the Middle East, with concerns raised about the humanitarian impact on Gaza's residents amidst the ongoing"
+    }
+  },
+  "user_feedback": null
+}

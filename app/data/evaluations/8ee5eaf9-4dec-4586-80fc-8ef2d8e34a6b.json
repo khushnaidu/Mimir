@@ -1,0 +1,25 @@
+{
+  "query_id": "8ee5eaf9-4dec-4586-80fc-8ef2d8e34a6b",
+  "timestamp": "2025-05-13T10:40:52.094499",
+  "model": "gpt-4",
+  "input_text": "Israel has turned 70% of Gaza into no-go zones, in maps",
+  "total_process_time": 17.024385929107666,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.043081283569336,
+      "token_count": 232,
+      "result": "Israel's implementation of no-go zones in 70% of Gaza"
+    },
+    "news_query_extraction": {
+      "latency": 1.3142149448394775,
+      "token_count": 278,
+      "result": "Israel's Gaza policy, no-go zones in Gaza, Israeli-Palestinian conflict, territorial control"
+    },
+    "summarization": {
+      "latency": 13.84196400642395,
+      "token_count": 2091,
+      "result": "Here are what other news sources are saying: Unfortunately, due to technical issues, there are no news articles available to summarize at this moment. The request to access the articles has been rate-limited, meaning too many attempts have been made in a short span of time. \n\nHere is some relevant discourse on this and related issues on Reddit: \n\nThe Reddit discourse revolves around the geopolitical tensions and humanitarian crises occurring in the Middle East. One post in the 'socialism' subreddit discusses Egypt's construction of a concrete wall along its border with Gaza, drawing parallels with the situation between Poland and Belarus where refugees have been trapped. The comments highlight perspectives on US imperialism, climate change-induced mass migration, and eco-fascism.\n\nAnother post in the 'news' subreddit reports on Israeli military actions in Gaza, including ordering residents to flee areas that are then bombed. The comments reflect the uncertainty and hopelessness felt by many Gazans, with some users questioning the feasibility of safe evacuation given the controlled ingress and egress points in the region. \n\nA third post discusses the impact of Israeli strikes on Gaza's already strained health services, with one top comment noting the bombing of the only lab in Gaza capable of COVID-19 testing. Other comments criticize the Sykes-Picot Agreement for its role in modern Middle-Eastern conflicts and express concern over the U.S.'s continued arms sales to Israel."
+    }
+  },
+  "user_feedback": null
+}

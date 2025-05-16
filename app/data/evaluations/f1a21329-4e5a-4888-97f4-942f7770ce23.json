@@ -1,0 +1,25 @@
+{
+  "query_id": "f1a21329-4e5a-4888-97f4-942f7770ce23",
+  "timestamp": "2025-05-13T10:41:34.849573",
+  "model": "deepseek-7b",
+  "input_text": "Israel has turned 70% of Gaza into no-go zones, in maps",
+  "total_process_time": 2.08962082862854,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.6718442440032959,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    },
+    "news_query_extraction": {
+      "latency": 0.438403844833374,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    },
+    "summarization": {
+      "latency": 0.4568803310394287,
+      "token_count": null,
+      "result": "Error processing request with deepseek-7b. Please try another model."
+    }
+  },
+  "user_feedback": null
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "f315a2ee-f34e-4eb7-bc17-a64142fc6cb1",
+  "timestamp": "2025-05-14T16:59:14.544127",
+  "model": "tinyllama-1.1b",
+  "input_text": "The conflict ignited after a deadly April 22 shooting attack in the Pahalgam area of India-administered Kashmir, where 25 Indian tourists and one Nepalese visitor were killed. India accused Pakistan\u2019s government of links to the attacks \u2013 an accusation Islamabad strongly denied.",
+  "total_process_time": 10.117357015609741,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.736069917678833,
+      "token_count": 279,
+      "result": "Conflict escalation in India-administered Kashmir following deadly shooting attack on tourists, with accusations against Pakistan."
+    },
+    "news_query_extraction": {
+      "latency": 1.8739211559295654,
+      "token_count": 358,
+      "result": "India-administered Kashmir conflict, April 22 shooting attack, Pahalgam area, Indian tourists killed, Nepalese visitor killed, Pakistan government accusation, Islamabad denial"
+    },
+    "summarization": {
+      "latency": 4.847339153289795,
+      "token_count": 2286,
+      "result": "Here are what other news sources are saying:\n\n1. BBC News reported on India and Pakistan accusing each other of 'violations' after a ceasefire deal was brokered following days of cross-border attacks. Both nations claimed breaches of the ceasefire agreement just hours after it was announced. The escalation comes amidst heightened tensions between the two countries.\nSource: [BBC News](https://www.bbc.com/news/articles/cvg9d913v20o)\n\n2. Time provided a timeline of tensions between India and Pakistan over Kashmir, dating back to their independence and partition in 1947. The recent escalation, marked by missile attacks and airstrikes, represents a significant flare-up in hostilities between the neighboring nations.\nSource: [Time](https://time.com/7283794/india-pakistan-kashmir-tensions-timeline-history-conflict/)\n\n3. Business Insider highlighted how airlines are rerouting flights over Asia due to escalating tensions between India and Pakistan. Pakistani airspace saw a significant decrease in air traffic as airlines sought to avoid flying over the conflict zone, reflecting the impact of geopolitical tensions on air travel.\nSource: [Business Insider](https://www.businessinsider.com/india-pakistan-tensions-force-airlines-reroute-flights-avoid-conflict-zone-2025-5)\n\n4. The Atlantic delved into the dynamics of the India-Pakistan conflict, emphasizing how both countries are fueling extremism without a clear resolution in sight. The article underscored the rapid escalation of tensions between the nuclear-armed neighbors, raising concerns about the potential consequences of the current situation.\nSource: [The Atlantic](https://www.theatlantic.com/international/archive/2025/05/india-pakistan-conflict-extremism/682746/)\n\n5. Time offered insights on steps India and Pakistan could take to de-escalate tensions and avoid a hot war. The article highlighted the need for both nations to find a face-saving victory that could pave the way for diplomatic solutions, emphasizing the importance of preventing further military confrontations.\nSource: [Time](https://time.com/7283585/pakistan-india-crisis-airstrikes/)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\nA Reddit post on r/socialism titled \"A history of Indian aggression against Kashmir\" discussed the ongoing conflict in Kashmir, shedding light on the historical context and implications of Indian actions in the region. The post highlighted the complexities of the situation, with differing perspectives on the roles played by India and Pakistan in the conflict"
+    }
+  },
+  "user_feedback": null
+}

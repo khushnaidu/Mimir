@@ -1,0 +1,25 @@
+{
+  "query_id": "1a1fbcce-7531-41e9-970a-d5d97db803d6",
+  "timestamp": "2025-05-13T10:59:31.434619",
+  "model": "gpt-3.5-turbo",
+  "input_text": "The UAE, for example, has already pledged $1.4 trillion in investments to the US over 10 years in sectors ranging from artificial intelligence and energy to mining and aluminium production.",
+  "total_process_time": 4.862060070037842,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.456820011138916,
+      "token_count": 251,
+      "result": "UAE investment pledge US artificial intelligence energy mining aluminium production"
+    },
+    "news_query_extraction": {
+      "latency": 0.621884822845459,
+      "token_count": 315,
+      "result": "Text: The UK government unveiled a new immigration policy aimed at attracting skilled workers post-Brexit.\nExtracted keywords: UK immigration policy, skilled workers, Brexit, government initiative"
+    },
+    "summarization": {
+      "latency": 2.0644540786743164,
+      "token_count": 1845,
+      "result": "Here are what other news sources are saying: Unfortunately, due to rate limitations on the news articles, we are unable to provide a summary at this time.\n\nHere is some relevant discourse on this and related issues on Reddit: A Reddit post discusses the U.S. government's decision to limit exports of artificial intelligence software, with users expressing skepticism about the effectiveness of such restrictions. Some users reference past attempts to regulate encryption and question the practical implications of the new rule. Additionally, a separate Reddit post highlights China's advancements in automation and artificial intelligence, emphasizing the country's competitive edge in manufacturing. Users debate the impact of protectionist measures on industrial innovation and argue for the adoption of advanced technologies to enhance manufacturing capabilities."
+    }
+  },
+  "user_feedback": null
+}
