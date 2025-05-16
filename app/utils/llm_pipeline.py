@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-HF_TOKEN = "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"  # Hard-coded token
+HF_TOKEN = os.getenv("HF_TOKEN")  # Get token from environment variable
 
 # Log HF token status (without revealing the token)
 if HF_TOKEN:
