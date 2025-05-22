@@ -254,3 +254,29 @@ print(result['summary'])
 - Sai Prajwal Kongalla  (saiprajwal.kongalla@gmail.com)  
 - Varsha Chamakura    (varsha.chamakura@gmail.com)  
 
+## Major Contributions
+
+- **Khush Naidu**  
+  - Flask API setup & endpoint definitions (`app/main.py`)  
+  - Data acquisition pipeline (`app/utils/data_acquisition.py`)  
+  - RAG pipeline (embedding generation, similarity search) (`app/utils/rag_pipeline.py`)  
+  - LLM pipeline tasks: query reformulation, keyword extraction, summarization (`app/utils/llm_pipeline.py`)  
+  - LoRA fine-tuning and TinyLlama integration (`app/utils/llm_pipeline.py`)  
+  - Task-specific parameter optimization  
+  - Pipeline and model testing & evaluation scripts (`app/utils/evaluate.py`)  (
+  - Documentation (this README + docs/)  
+
+- **Sai Prajwal Kongalla**  
+  - Chrome extension development (UI, popup.html/js, content_script.js, background.js) (`chrome-extension/`)  
+  - NewsAPI integration module (`app/utils/news_api.py`)  
+  - Vector store implementation (`app/utils/vector_store.py`)  
+  - Secure communication between extension and Flask backend  
+
+- **Varsha Chamakura**  
+  - Project documentation and report write-up (`docs/`)  
+  - Presentation slides and demo video 
+  - Frontend UI enhancements for Chrome extension  
+  - Testing (end-to-end and unit tests)  
+
+---
+
