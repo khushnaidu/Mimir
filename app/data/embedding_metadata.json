@@ -1,0 +1,33 @@
+{
+  "total_posts": 9808,
+  "embedding_dimension": 384,
+  "generated_at": "2025-05-10T10:04:45.187177",
+  "model_name": "all-MiniLM-L6-v2",
+  "post_types": {
+    "recent": 4516,
+    "archive": 5292
+  },
+  "topics": [
+    "elections",
+    "immigration",
+    "education",
+    "healthcare",
+    "taxes",
+    "foreign policy",
+    "free speech",
+    "social justice",
+    "technology & AI",
+    "gun rights",
+    "abortion",
+    "climate change"
+  ],
+  "subreddits": [
+    "moderatepolitics",
+    "neoliberal",
+    "Libertarian",
+    "politics",
+    "news",
+    "socialism",
+    "Conservative"
+  ]
+}

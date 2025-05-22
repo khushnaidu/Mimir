@@ -1,0 +1,25 @@
+{
+  "query_id": "852f982d-0abc-4e4e-ad11-1e664b2a8889",
+  "timestamp": "2025-05-21T18:12:46.898443",
+  "model": "tinyllama-1.1b",
+  "input_text": "On May 7, more than two weeks after gunmen killed 26 civilians in Pahalgam, Indian-administered Kashmir, India, blaming Islamabad for the attack, launched missiles at multiple sites in Pakistan-administered Kashmir and Pakistan\u2019s Punjab province, killing at least 51 people, including 11 soldiers and several children.",
+  "total_process_time": 7.671576738357544,
+  "metrics": {
+    "reformatting": {
+      "latency": 5.355613946914673,
+      "token_count": 183,
+      "result": "Reformat following optimal semantic search Reddit political discussion india pakistan international politics foreign policy"
+    },
+    "news_query_extraction": {
+      "latency": 0.5215981006622314,
+      "token_count": 184,
+      "result": "International Relations policy, india, pakistan, gun"
+    },
+    "summarization": {
+      "latency": 0.8053598403930664,
+      "token_count": 3783,
+      "result": "Analysis of International Relations and Social Issues Issues:\n\n\n1. Key aspects of International Relations Policy:\n   - india relations involve complex geopolitical factors including territorial disputes, security concerns, and economic interests.\n   - International stakeholders monitor pakistan developments closely due to regional stability implications.\n   - Historical context is important in understanding russia tensions and diplomatic approaches.\n   - Both confrontational and cooperative elements exist in ukraine politics.\n2. Related considerations for Social Issues:\n   - Social policies addressing gun reveal different values regarding individual freedom and collective welfare.\n   - Progressive views support expanded protections and services for religion issues.\n   - Conservative perspectives emphasize traditional values and limited government involvement in rights.\n\nThis analysis considers multiple perspectives across the political spectrum and is enhanced by parameter-efficient fine-tuning."
+    }
+  },
+  "user_feedback": null
+}

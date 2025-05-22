@@ -1,50 +1,74 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 *.so
-
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# Environment
-.env
-.env.*
-
-# MacOS
-.DS_Store
-
-# Virtual environments
-.venv/
-venv/
+.Python
 env/
+venv/
 ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Logs & cache
-*.log
-*.sqlite3
+# Environment variables
+.env
+.env.local
+*.env
+
+# JavaScript/Chrome Extension
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+
+# Project specific
+app/data/processed/
+app/data/raw/
 *.db
 *.sqlite
-*.pkl
-*.cache/
-*.pytest_cache/
-*.mypy_cache/
+*.sqlite3
 
-# Output files
-*.jsonl
-*.csv
-*.tsv
+# API keys and secrets
+**/config/secrets.json
+**/config/keys.json
+api_keys.txt
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution / packaging
+dist/
+build/
 *.zip
-*.gz
-
-# OS files
-Thumbs.db
-desktop.ini
-
+*.crx
+*.pem

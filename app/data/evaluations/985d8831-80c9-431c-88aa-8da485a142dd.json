@@ -1,0 +1,25 @@
+{
+  "query_id": "985d8831-80c9-431c-88aa-8da485a142dd",
+  "timestamp": "2025-05-21T18:38:40.660149",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Israel kills 93 in Gaza, shots fired towards diplomats in West Bank",
+  "total_process_time": 6.7150537967681885,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.0421230792999268,
+      "token_count": 225,
+      "result": "Israel Gaza conflict casualties West Bank diplomats attack"
+    },
+    "news_query_extraction": {
+      "latency": 0.5784869194030762,
+      "token_count": 292,
+      "result": "Israel, Gaza killings, West Bank diplomats, conflict escalation"
+    },
+    "summarization": {
+      "latency": 4.140292167663574,
+      "token_count": 2193,
+      "result": "1. Start with \"Here are what other news sources are saying:\" followed by a summary of the news articles:\n\n- Al Jazeera English reports on the call for foreign journalists not to abandon their Palestinian colleagues in Gaza amidst Israel's intention to reoccupy the region. The article emphasizes the need for open access and an end to killings of journalists.\n- BBC News highlights increasing criticism from countries like the UK, France, and Canada demanding Israel to end its offensive in Gaza, citing a dwindling goodwill towards Israel.\n- NPR discusses how politicians, lawyers, and journalists who fled authoritarian regimes see similarities between Trump's tactics and those employed in autocratic systems in Europe, Asia, and Latin America.\n- Al Jazeera English covers the surge of hate-filled songs targeting Indian Muslims after the Kashmir attack, fueling Islamophobic sentiments on social media.\n- Al Jazeera English also features Palestinian author Mosab Abu Toha winning a Pulitzer Prize for commentary on the physical and emotional toll in Gaza amid conflict.\n\n2. Then include \"Here is some relevant discourse on this and related issues on Reddit:\" followed by a summary of the Reddit posts:\n\n- In a post on r/Libertarian, Israeli strikes in Gaza killing 106 Palestinians sparked varied reactions. Comments express frustration towards both Hamas and Netanyahu, with some advocating for withdrawal from the Middle East to let the conflict unfold independently. Others question Israel's actions despite previous ceasefire attempts, highlighting the complexity of the situation."
+    }
+  },
+  "user_feedback": null
+}
