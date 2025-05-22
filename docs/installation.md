@@ -18,8 +18,8 @@ Before you begin, ensure you have the following:
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Mimir_Tool.git
-cd Mimir_Tool
+git clone https://github.com/khushnaidu/Mimir.git
+cd Mimir
 ```
 
 ## Step 2: Set Up Python Environment
@@ -126,17 +126,6 @@ If the Chrome extension isn't working properly:
 2. Ensure the Flask backend is running
 3. Verify the extension is pointed to the correct API endpoint (should be `http://localhost:5000/analyze` by default)
 
-## Optional: Running with Docker
-
-If you prefer using Docker, you can use the following commands:
-
-```bash
-# Build the Docker image
-docker build -t mimir .
-
-# Run the container
-docker run -p 5000:5000 --env-file .env mimir
-```
 
 ## Next Steps
 
