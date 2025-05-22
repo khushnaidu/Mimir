@@ -23,7 +23,7 @@ Mimir performs three specialized LLM tasks that form the backbone of its analysi
 2. **News Query Extraction**: Extracts focused keywords to find relevant articles via News API
 3. **Context Summarization**: Synthesizes Reddit posts and news articles into balanced political analysis
 
-For detailed information on these tasks, see [Core NLP Tasks Documentation](Mimir/docs/core_nlp_tasks.md).
+For detailed information on these tasks, see [Core NLP Tasks Documentation](docs/core_nlp_tasks.md).
 
 ## Architecture Overview
 
@@ -229,11 +229,11 @@ print(result['summary'])
 
 ## Documentation
 
-- [Installation Guide](Mimir/docs/installation.md)
-- [API Documentation](Mimir/docs/api.md)
-- [Chrome Extension Guide](Mimir/docs/chrome_extension.md)
-- [Model Optimization](Mimir/docs/model_optimization.md)
-- [Core NLP Tasks](Mimir/docs/core_nlp_tasks.md)
+- [Installation Guide](docs/installation.md)
+- [API Documentation](docs/api.md)
+- [Chrome Extension Guide](docs/chrome_extension.md)
+- [Model Optimization](docs/model_optimization.md)
+- [Core NLP Tasks](docs/core_nlp_tasks.md)
 
 ## Acknowledgments
 
