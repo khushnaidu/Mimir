@@ -1,0 +1,25 @@
+{
+  "query_id": "125ec136-7d30-4f37-b662-8988fc213b27",
+  "timestamp": "2025-05-21T19:06:40.958517",
+  "model": "gpt-3.5-turbo",
+  "input_text": "Israel kills 93 in Gaza, shots fired towards diplomats in West Bank",
+  "total_process_time": 7.020830869674683,
+  "metrics": {
+    "reformatting": {
+      "latency": 1.0849909782409668,
+      "token_count": 225,
+      "result": "Israel Gaza conflict casualties diplomatic incident West Bank"
+    },
+    "news_query_extraction": {
+      "latency": 0.6167018413543701,
+      "token_count": 295,
+      "result": "Israel, Gaza killings, West Bank diplomats, violence, Middle East tensions"
+    },
+    "summarization": {
+      "latency": 4.530237913131714,
+      "token_count": 2411,
+      "result": "Here are what other news sources are saying:\n\n1. Al Jazeera English reports on the importance of foreign journalists not abandoning their Palestinian colleagues in Gaza as Israel moves to reoccupy the region. The article emphasizes the need for open access and an end to the killings of journalists in the conflict.\n   Source: [Al Jazeera English - Foreign journalists must not abandon their Palestinian colleagues in Gaza](https://www.aljazeera.com/opinions/2025/5/20/foreign-journalists-must-not-abandon-their-palestinian-colleagues-in-gaza)\n\n2. BBC News highlights the growing criticism from countries like the UK, France, and Canada demanding Israel to end its offensive in Gaza. The article discusses the escalating tensions and casualties resulting from the conflict.\n   Source: [BBC News - Goodwill running out as UK, France and Canada demand Israel end Gaza offensive](https://www.bbc.com/news/articles/cn9j1052p2yo)\n\n3. NPR delves into how politicians, lawyers, and journalists who fled authoritarian regimes in Europe, Asia, and Latin America see similarities between Trump's tactics and those of autocratic leaders. The article draws parallels between the Trump administration and authoritarian practices.\n   Source: [NPR - People who fled authoritarian regimes say Trump's tactics remind them of home](https://www.npr.org/2025/05/01/nx-s1-5340754/trump-authoritarianism-u-s-hungary-turkey-orban-erdogan-duterte-maria-ressa)\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. A Reddit post discusses the deadly protests in Gaza as the U.S. Embassy opens in Jerusalem, resulting in at least 55 deaths and 1,200 wounded. Comments express shock at the high number of casualties and concerns about potential consequences.\n   Source: [Reddit - At least 55 dead, 1,200 wounded in Gaza protests as U.S. Embassy opens in Jerusalem](http://www.chicagotribune.com/news/nationworld/ct-israel-jerusalem-embassy-20180514-story.html)\n\n2. Another Reddit post raises concerns about Israel potentially breaching international law with the use of US weapons in Gaza, according to the state department. The discussion centers on the legality of such actions and implications for foreign policy.\n   Source: [Reddit - Israel may have breached international law with US weapons in Gaza, says state department](No link provided)"
+    }
+  },
+  "user_feedback": null
+}

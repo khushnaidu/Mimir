@@ -45,8 +45,7 @@ Analyze political text using the specified model.
 ```json
 {
   "text": "What are the key policy differences between Democrats and Republicans on healthcare?",
-  "model": "tinyllama-1.1b",
-  "collect_feedback": true
+  "model": "tinyllama-1.1b"
 }
 ```
 
@@ -54,7 +53,6 @@ Analyze political text using the specified model.
 |-------|------|----------|-------------|
 | text | string | Yes | The political text to analyze |
 | model | string | No | The model to use (defaults to "gpt-3.5-turbo") |
-| collect_feedback | boolean | No | Whether to collect feedback for evaluation (defaults to true) |
 
 **Response**:
 ```json
@@ -84,88 +82,11 @@ Analyze political text using the specified model.
     ]
   },
   "model_used": "tinyllama-1.1b",
-  "query_id": "550e8400-e29b-41d4-a716-446655440000",
   "performance_metrics": {
     "total_process_time": 4.32,
     "reformatting_time": 0.78,
     "news_query_time": 0.85,
     "summarization_time": 2.69
-  }
-}
-```
-
-### Submit Feedback
-
-Submit user feedback on analysis results.
-
-**Endpoint**: `POST /feedback`
-
-**Request Body**:
-```json
-{
-  "query_id": "550e8400-e29b-41d4-a716-446655440000",
-  "rating": 4,
-  "comments": "Good analysis but could have more depth on economic implications"
-}
-```
-
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| query_id | string | Yes | The ID of the query to provide feedback for |
-| rating | integer | Yes | Rating from 1-5 (1=poor, 5=excellent) |
-| comments | string | No | Optional user comments on the analysis |
-
-**Response**:
-```json
-{
-  "success": true
-}
-```
-
-### Get Evaluation Reports
-
-Retrieve model comparison and evaluation reports.
-
-**Endpoint**: `GET /evaluation/reports`
-
-**Response**:
-```json
-{
-  "model_comparison": {
-    "average_ratings": {
-      "gpt-3.5-turbo": 4.2,
-      "gpt-4": 4.7,
-      "tinyllama-1.1b": 3.8
-    },
-    "performance_metrics": {
-      "average_latency": {
-        "gpt-3.5-turbo": 2.5,
-        "gpt-4": 6.8,
-        "tinyllama-1.1b": 4.2
-      },
-      "token_efficiency": {
-        "gpt-3.5-turbo": 450,
-        "gpt-4": 380,
-        "tinyllama-1.1b": 520
-      }
-    }
-  },
-  "task_performance": {
-    "reformatting": {
-      "gpt-3.5-turbo": 0.8,
-      "gpt-4": 2.1,
-      "tinyllama-1.1b": 2.7
-    },
-    "news_query_extraction": {
-      "gpt-3.5-turbo": 0.7,
-      "gpt-4": 1.9,
-      "tinyllama-1.1b": 2.3
-    },
-    "summarization": {
-      "gpt-3.5-turbo": 1.2,
-      "gpt-4": 3.5,
-      "tinyllama-1.1b": 4.2
-    }
   }
 }
 ```
@@ -200,17 +121,6 @@ curl -X POST http://localhost:5000/analyze \
   }'
 ```
 
-**Submit Feedback**:
-```bash
-curl -X POST http://localhost:5000/feedback \
-  -H "Content-Type: application/json" \
-  -d '{
-    "query_id": "550e8400-e29b-41d4-a716-446655440000",
-    "rating": 4,
-    "comments": "Good analysis but could use more examples"
-  }'
-```
-
 ### Python Examples
 
 ```python
@@ -226,17 +136,6 @@ response = requests.post(
 )
 result = response.json()
 print(result["summary"])
-
-# Submit feedback
-query_id = result["query_id"]
-feedback_response = requests.post(
-    "http://localhost:5000/feedback",
-    json={
-        "query_id": query_id,
-        "rating": 5,
-        "comments": "Excellent balanced analysis"
-    }
-)
 ```
 
 ## Rate Limiting
