@@ -153,13 +153,6 @@ quantization_config = BitsAndBytesConfig(
 | TinyLlama w/o LoRA | ~1,800 |
 | TinyLlama w/ LoRA | ~1,200 |
 
-### Quality Assessment
-
-Internal evaluations show that TinyLlama with LoRA achieves:
-- 85% of GPT-3.5's quality for political keyword extraction
-- 78% of GPT-3.5's quality for political context summarization
-- 90% of GPT-3.5's quality for query reformatting
-
 ## Future Optimization Directions
 
 1. **Domain-Specific Continued Pre-training**:
@@ -176,6 +169,10 @@ Internal evaluations show that TinyLlama with LoRA achieves:
 
 5. **Ensemble Methods**:
    - Combine outputs from multiple specialized political models
+
+6. **User Feedback System**:
+   - Implement a working feedback mechanism to evaluate model outputs
+   - Use collected feedback to guide further optimization
 
 ## Conclusion
 
