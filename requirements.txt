@@ -17,4 +17,6 @@ einops==0.7.0
 safetensors==0.4.2
 matplotlib==3.7.1
 flask-cors==3.0.10
-aiohttp==3.8.4 
+aiohttp==3.8.4
+peft==0.7.1
+ctransformers==0.2.27 

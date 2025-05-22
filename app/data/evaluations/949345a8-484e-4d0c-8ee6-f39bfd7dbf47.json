@@ -1,0 +1,25 @@
+{
+  "query_id": "949345a8-484e-4d0c-8ee6-f39bfd7dbf47",
+  "timestamp": "2025-05-21T18:12:02.964061",
+  "model": "gpt-3.5-turbo",
+  "input_text": "On May 7, more than two weeks after gunmen killed 26 civilians in Pahalgam, Indian-administered Kashmir, India, blaming Islamabad for the attack, launched missiles at multiple sites in Pakistan-administered Kashmir and Pakistan\u2019s Punjab province, killing at least 51 people, including 11 soldiers and several children.",
+  "total_process_time": 5.540812015533447,
+  "metrics": {
+    "reformatting": {
+      "latency": 0.5981230735778809,
+      "token_count": 283,
+      "result": "Conflict between India and Pakistan over Kashmir resulting in casualties and missile strikes."
+    },
+    "news_query_extraction": {
+      "latency": 0.7060668468475342,
+      "token_count": 363,
+      "result": "Indian-administered Kashmir, Pahalgam attack, Islamabad blame, India missile strike, Pakistan-administered Kashmir, Punjab province, civilian casualties"
+    },
+    "summarization": {
+      "latency": 3.246523141860962,
+      "token_count": 2182,
+      "result": "Here are what other news sources are saying:\n\n1. **BBC News - Watch: Airports closed, eerie silence in Indian-administered Kashmir**: The article highlights the deserted streets of Srinagar in Indian-administered Kashmir due to the suspension of flights in and out of the region's main city for civilians.\n   \n2. **BBC News - Why India and Pakistan fight over Kashmir**: This piece delves into the longstanding dispute over Kashmir between India and Pakistan, exploring diverse opinions within the region regarding its governance and allegiance.\n\n3. **BBC News - India closes main border crossing with Pakistan after Kashmir attack**: Following an attack in Indian-administered Kashmir, India takes measures against Pakistan, including closing the main border crossing and expelling diplomats, escalating tensions between the two countries.\n\n4. **BBC News - Four days that took India and Pakistan to the brink**: The article provides insights into the recent clashes in Kashmir, visiting families affected by the conflict and discussing the perspectives of military insiders.\n\n5. **BBC News - IPL suspended for one week over safety concerns**: Amid tensions between India and Pakistan, the Indian Premier League is suspended for a week following accusations of a military base attack.\n\nHere is some relevant discourse on this and related issues on Reddit:\n\n1. **Reddit Post - A history of Indian aggression against Kashmir**: The post discusses the historical context of Indian aggression in Kashmir, highlighting the complexities of the conflict and the differing perspectives on the roles of India and Pakistan. The comments touch upon the movie \"Haider\" as a portrayal of the Kashmir issue, with users sharing varied opinions on its accuracy and depiction.\n\nThis comprehensive summary reflects the multifaceted nature of the Kashmir conflict, encompassing geopolitical tensions, civilian perspectives, and historical contexts from various sources and discussions."
+    }
+  },
+  "user_feedback": null
+}

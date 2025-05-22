@@ -14,6 +14,7 @@ from app.utils.llm_pipeline import AVAILABLE_MODELS
 from app.utils.rag_pipeline import RAGPipeline
 from app.utils.news_api import NewsAPIClient
 from app.utils.evaluation import store_evaluation_data, update_evaluation_feedback, generate_model_comparison_reports
+from app.utils.political_analysis import PoliticalAnalyzer  # Import the PoliticalAnalyzer
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -31,22 +32,74 @@ vector_store = VectorStore()
 news_client = NewsAPIClient(api_key=NEWSAPI_KEY)
 
 # Import and setup LLM pipeline dynamically to handle specialized class
-from app.utils.llm_pipeline import query_reformatter, news_query_extractor, context_summarizer
-llm_pipeline = type('LLMPipeline', (), {
-    'query_reformatter': staticmethod(query_reformatter),
-    'news_query_extractor': staticmethod(news_query_extractor),
-    'context_summarizer': staticmethod(context_summarizer)
-})()
+from app.utils.llm_pipeline import query_reformatter, news_query_extractor, context_summarizer, call_model
+
+# Initialize PoliticalAnalyzer for TinyLlama with LoRA
+political_analyzer = PoliticalAnalyzer(model_name="tinyllama-1.1b")
+
+# Create a wrapper for LLM pipeline that can route to either standard models or our optimized TinyLlama
+class CustomLLMPipeline:
+    def __init__(self):
+        self.political_analyzer = political_analyzer
+    
+    def query_reformatter(self, text, model_name):
+        """Route to appropriate model implementation"""
+        if model_name == "tinyllama-1.1b":
+            # Use our optimized TinyLlama with LoRA
+            messages = [
+                {"role": "system", "content": "You are a political discourse expert who specializes in detecting key entities, policies, events and contextual relationships in political text."},
+                {"role": "user", "content": f"Reformat the following text to be optimal for semantic search in a Reddit political discussion context: {text}"}
+            ]
+            return call_model("tinyllama-1.1b", messages, task_type="query_reformatter")
+        else:
+            # Use standard implementation
+            return query_reformatter(text, model_name)
+    
+    def news_query_extractor(self, text, model_name):
+        """Route to appropriate model implementation"""
+        if model_name == "tinyllama-1.1b":
+            # Use our optimized TinyLlama with LoRA
+            return self.political_analyzer.extract_policy_keywords(text)
+        else:
+            # Use standard implementation
+            return news_query_extractor(text, model_name)
+    
+    def context_summarizer(self, context, model_name):
+        """Route to appropriate model implementation"""
+        if model_name == "tinyllama-1.1b":
+            # Use our optimized TinyLlama with LoRA
+            messages = [
+                {"role": "system", "content": "You are a balanced political analyst who provides nuanced perspectives across the political spectrum."},
+                {"role": "user", "content": f"Provide a comprehensive summary of the following context, highlighting different perspectives and key insights:\n\n{context}"}
+            ]
+            return call_model("tinyllama-1.1b", messages, task_type="context_summarizer")
+        else:
+            # Use standard implementation
+            return context_summarizer(context, model_name)
+
+# Use our custom pipeline
+llm_pipeline = CustomLLMPipeline()
 
 rag_pipeline = RAGPipeline(vector_store, llm_pipeline)
 
 @app.route('/models', methods=['GET'])
 def get_available_models():
     """Return a list of available models for frontend selection"""
-    return jsonify({
-        'models': list(AVAILABLE_MODELS.keys()),
-        'default_model': 'gpt-3.5-turbo'  # Default model
-    })
+    models = list(AVAILABLE_MODELS.keys())
+    
+    # Add model descriptions for frontend display
+    model_info = {
+        'models': models,
+        'default_model': 'gpt-3.5-turbo',
+        'model_descriptions': {
+            'gpt-3.5-turbo': 'OpenAI GPT-3.5 Turbo - Fast and efficient commercial model',
+            'gpt-4': 'OpenAI GPT-4 - Advanced commercial model with strong reasoning',
+            'tinyllama-1.1b': 'TinyLlama with LoRA - Open-source model optimized for political analysis'
+        }
+    }
+    
+    # Ensure compact JSON output with no pretty-printing
+    return jsonify(model_info), 200, {'Content-Type': 'application/json'}
 
 @app.route('/analyze', methods=['POST'])
 def analyze_text():

@@ -1,0 +1,25 @@
+{
+  "query_id": "69e33bc3-c436-482b-9001-cd64dd92977c",
+  "timestamp": "2025-05-21T18:12:31.887405",
+  "model": "gpt-4",
+  "input_text": "On May 7, more than two weeks after gunmen killed 26 civilians in Pahalgam, Indian-administered Kashmir, India, blaming Islamabad for the attack, launched missiles at multiple sites in Pakistan-administered Kashmir and Pakistan\u2019s Punjab province, killing at least 51 people, including 11 soldiers and several children.",
+  "total_process_time": 14.488659381866455,
+  "metrics": {
+    "reformatting": {
+      "latency": 2.5505309104919434,
+      "token_count": 321,
+      "result": "Input: The recent escalation of tensions between India and Pakistan over the Kashmir conflict, with India launching missile attacks in response to a civilian massacre they attribute to Islamabad. \n\nOutput: India-Pakistan tensions, Kashmir conflict, civilian massacre, missile attacks, Islamabad involvement."
+    },
+    "news_query_extraction": {
+      "latency": 1.3637611865997314,
+      "token_count": 367,
+      "result": "May 7 Pahalgam attack, Indian-administered Kashmir, Islamabad blamed, missile launch Pakistan-administered Kashmir, Punjab province attack, civilian and military casualties"
+    },
+    "summarization": {
+      "latency": 9.669724941253662,
+      "token_count": 2189,
+      "result": "Here are what other news sources are saying: BBC News reported the arrest of an Indian YouTuber, Jyoti Malhotra, on suspicions of spying for Pakistan, a claim her father vehemently denies. Tensions between India and Pakistan have been escalating, as evidenced by mutual accusations over drone strikes. Despite a ceasefire, diplomatic retaliatory measures persist between the two South Asian neighbors. Meanwhile, Time provided a historical context to the ongoing tensions over the disputed border region of Kashmir, highlighting significant escalations such as exchange of gunfire and airstrikes. The Atlantic, while not directly related to the conflict, has included images from the region in its \u2018Photos of the Week\u2019 section.\n\nHere is some relevant discourse on this and related issues on Reddit: Users on the 'neoliberal' subreddit shared and discussed news about the escalating attacks between India and Pakistan. The general consensus among users appears to be that the situation is grave, with some expressing concern over the potential for nuclear conflict given both nations' capabilities. Another Reddit post on the 'news' subreddit focused on India's attack on Pakistan and Pakistani Kashmir, sparking discussions about the geopolitical implications and potential for a broader conflict involving other countries. There were also concerns expressed about the potential involvement of the Taliban in the escalating conflict."
+    }
+  },
+  "user_feedback": null
+}

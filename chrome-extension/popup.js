@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const newsContent = document.getElementById('newsContent');
     const redditContent = document.getElementById('redditContent');
 
+    // Test the models endpoint directly
+    testModelsEndpoint();
+
     // Handle tab switching
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -159,11 +162,33 @@ document.addEventListener('DOMContentLoaded', function () {
 // Fetch available models from the server
 function fetchAvailableModels() {
     fetch('http://localhost:5000/models')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            // Log the raw response for debugging
+            return response.text().then(text => {
+                console.log('Raw response:', text);
+                try {
+                    return JSON.parse(text);
+                } catch (e) {
+                    console.error('JSON parse error:', e);
+                    throw e;
+                }
+            });
+        })
         .then(data => {
+            console.log('Parsed data:', data);
             if (data.models && Array.isArray(data.models)) {
                 availableModels = data.models;
                 selectedModel = data.default_model || "gpt-3.5-turbo";
+
+                // Store model descriptions if available
+                if (data.model_descriptions) {
+                    window.modelDescriptions = data.model_descriptions;
+                    console.log('Model descriptions:', window.modelDescriptions);
+                }
+
                 updateModelSelector();
             }
         })
@@ -177,16 +202,26 @@ function fetchAvailableModels() {
 // Update the model selector with available models
 function updateModelSelector() {
     const modelSelector = document.getElementById('modelSelector');
+    console.log('Updating model selector with models:', availableModels);
+    console.log('Using model descriptions:', window.modelDescriptions);
+
     modelSelector.innerHTML = '';
 
     availableModels.forEach(model => {
         const option = document.createElement('option');
         option.value = model;
-        option.textContent = model;
 
-        // Add "(Open Source)" label for non-OpenAI models
-        if (!model.startsWith('gpt-')) {
-            option.textContent += ' (Open Source)';
+        // Use model description if available
+        if (window.modelDescriptions && window.modelDescriptions[model]) {
+            option.textContent = window.modelDescriptions[model];
+            console.log(`Using description for ${model}: ${option.textContent}`);
+        } else {
+            option.textContent = model;
+            console.log(`No description for ${model}, using default`);
+            // Add "(Open Source)" label for non-OpenAI models if no description
+            if (!model.startsWith('gpt-')) {
+                option.textContent += ' (Open Source)';
+            }
         }
 
         if (model === selectedModel) {
@@ -398,4 +433,33 @@ function formatDate(dateStr) {
     } catch (e) {
         return 'Unknown date';
     }
+}
+
+// Test the models endpoint directly
+function testModelsEndpoint() {
+    console.log('Testing models endpoint...');
+    fetch('http://localhost:5000/models')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text().then(text => {
+                console.log('Raw response:', text);
+                try {
+                    return JSON.parse(text);
+                } catch (e) {
+                    console.error('JSON parse error:', e);
+                    throw e;
+                }
+            });
+        })
+        .then(data => {
+            console.log('Test models endpoint response:', data);
+            if (data.models && Array.isArray(data.models)) {
+                console.log('Successfully loaded models from server');
+            }
+        })
+        .catch(error => {
+            console.error('Error testing models endpoint:', error);
+        });
 } 
