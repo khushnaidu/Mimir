@@ -86,6 +86,12 @@ For detailed information on these tasks, see [Core NLP Tasks Documentation](docs
    
    The server will start at `http://127.0.0.1:5000/`
 
+### Data & Models
+
+All processed data and model weights are included in the repo under `app/data/`.  
+- **Reddit Posts with Embeddings**: `app/data/reddit_posts_with_embeddings.json` (+ metadata JSON)
+
+
 ### Chrome Extension Setup
 
 1. Open Chrome and navigate to `chrome://extensions/`
@@ -240,4 +246,11 @@ print(result['summary'])
 - TinyLlama team for the base model
 - Hugging Face for model hosting and transformers library
 - Reddit for the political discussion data
-- NewsAPI for real-time news access 
+- NewsAPI for real-time news access
+
+## Contributors
+
+- Khush Naidu     (khush.naidu@gmail.com)  
+- Sai Prajwal Kongalla  (saiprajwal.kongalla@gmail.com)  
+- Varsha Chamakura    (varsha.chamakura@gmail.com)  
+
