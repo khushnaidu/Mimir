@@ -1,0 +1,25 @@
+{
+  "query_id": "41714425-4edb-4357-9b4c-15000f68b48c",
+  "timestamp": "2025-05-21T18:40:23.507351",
+  "model": "tinyllama-1.1b",
+  "input_text": "Israel kills 93 in Gaza, shots fired towards diplomats in West Bank",
+  "total_process_time": 7.213376998901367,
+  "metrics": {
+    "reformatting": {
+      "latency": 5.196876049041748,
+      "token_count": 118,
+      "result": "Reformat following optimal semantic search Reddit political discussion war international politics foreign policy"
+    },
+    "news_query_extraction": {
+      "latency": 0.32041406631469727,
+      "token_count": 10,
+      "result": "Error generating response with TinyLlama/TinyLlama-1.1B-Chat-v1.0. The model is having difficulties., Israel, Gaza, West Bank, international relations"
+    },
+    "summarization": {
+      "latency": 0.8086609840393066,
+      "token_count": 3097,
+      "result": "Analysis of International Relations and Social Issues Issues:\n\n\n1. Key aspects of International Relations Policy:\n   - india relations involve complex geopolitical factors including territorial disputes, security concerns, and economic interests.\n   - International stakeholders monitor ukraine developments closely due to regional stability implications.\n   - Historical context is important in understanding europe tensions and diplomatic approaches.\n   - Both confrontational and cooperative elements exist in war politics.\n2. Related considerations for Social Issues:\n   - Social policies addressing gun reveal different values regarding individual freedom and collective welfare.\n   - Progressive views support expanded protections and services for education issues.\n   - Conservative perspectives emphasize traditional values and limited government involvement in rights.\n\nThis analysis considers multiple perspectives across the political spectrum and is enhanced by parameter-efficient fine-tuning."
+    }
+  },
+  "user_feedback": null
+}

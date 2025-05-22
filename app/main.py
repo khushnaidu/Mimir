@@ -14,80 +14,65 @@ from app.utils.llm_pipeline import AVAILABLE_MODELS
 from app.utils.rag_pipeline import RAGPipeline
 from app.utils.news_api import NewsAPIClient
 from app.utils.evaluation import store_evaluation_data, update_evaluation_feedback, generate_model_comparison_reports
-from app.utils.political_analysis import PoliticalAnalyzer  # Import the PoliticalAnalyzer
+from app.utils.political_analysis import PoliticalAnalyzer
 
-# Configure logging
+# Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Load environment variables
+# Load env vars
 load_dotenv()
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)
 
-# Initialize components
+# Init components
 vector_store = VectorStore()
 news_client = NewsAPIClient(api_key=NEWSAPI_KEY)
 
-# Import and setup LLM pipeline dynamically to handle specialized class
 from app.utils.llm_pipeline import query_reformatter, news_query_extractor, context_summarizer, call_model
 
-# Initialize PoliticalAnalyzer for TinyLlama with LoRA
+# Init PoliticalAnalyzer
 political_analyzer = PoliticalAnalyzer(model_name="tinyllama-1.1b")
 
-# Create a wrapper for LLM pipeline that can route to either standard models or our optimized TinyLlama
 class CustomLLMPipeline:
     def __init__(self):
         self.political_analyzer = political_analyzer
     
     def query_reformatter(self, text, model_name):
-        """Route to appropriate model implementation"""
         if model_name == "tinyllama-1.1b":
-            # Use our optimized TinyLlama with LoRA
             messages = [
                 {"role": "system", "content": "You are a political discourse expert who specializes in detecting key entities, policies, events and contextual relationships in political text."},
                 {"role": "user", "content": f"Reformat the following text to be optimal for semantic search in a Reddit political discussion context: {text}"}
             ]
             return call_model("tinyllama-1.1b", messages, task_type="query_reformatter")
         else:
-            # Use standard implementation
             return query_reformatter(text, model_name)
     
     def news_query_extractor(self, text, model_name):
-        """Route to appropriate model implementation"""
         if model_name == "tinyllama-1.1b":
-            # Use our optimized TinyLlama with LoRA
             return self.political_analyzer.extract_policy_keywords(text)
         else:
-            # Use standard implementation
             return news_query_extractor(text, model_name)
     
     def context_summarizer(self, context, model_name):
-        """Route to appropriate model implementation"""
         if model_name == "tinyllama-1.1b":
-            # Use our optimized TinyLlama with LoRA
             messages = [
                 {"role": "system", "content": "You are a balanced political analyst who provides nuanced perspectives across the political spectrum."},
                 {"role": "user", "content": f"Provide a comprehensive summary of the following context, highlighting different perspectives and key insights:\n\n{context}"}
             ]
             return call_model("tinyllama-1.1b", messages, task_type="context_summarizer")
         else:
-            # Use standard implementation
             return context_summarizer(context, model_name)
 
-# Use our custom pipeline
 llm_pipeline = CustomLLMPipeline()
-
 rag_pipeline = RAGPipeline(vector_store, llm_pipeline)
 
 @app.route('/models', methods=['GET'])
 def get_available_models():
-    """Return a list of available models for frontend selection"""
     models = list(AVAILABLE_MODELS.keys())
     
-    # Add model descriptions for frontend display
     model_info = {
         'models': models,
         'default_model': 'gpt-3.5-turbo',
@@ -98,94 +83,75 @@ def get_available_models():
         }
     }
     
-    # Ensure compact JSON output with no pretty-printing
     return jsonify(model_info), 200, {'Content-Type': 'application/json'}
 
 @app.route('/analyze', methods=['POST'])
 def analyze_text():
-    """Analyze text with the selected model and capture performance metrics"""
     data = request.get_json()
     if not data or 'text' not in data:
         return jsonify({'error': 'No text provided'}), 400
     
     text = data['text']
-    
-    # Get model selection if provided, otherwise use default
     model_name = data.get('model', 'gpt-3.5-turbo')
-    collect_feedback = data.get('collect_feedback', True)  # Default to collecting feedback
+    collect_feedback = data.get('collect_feedback', True)
     
     logger.info(f"Received text: {text[:50]}...")
     logger.info(f"Using model: {model_name}")
     
     try:
         async def process():
-            # Generate a unique query ID
             query_id = str(uuid.uuid4())
-            
-            # Record start time for full process
             process_start_time = time.time()
             
-            # Process with the selected model
+            # Step 1: Reformat query
             reformatted_query_result = llm_pipeline.query_reformatter(text, model_name)
             reformatted_query = reformatted_query_result.content
-            
             logger.info(f"Reformatted query: {reformatted_query}")
             
-            # Get similar posts from vector store
+            # Step 2: Get similar posts
             similar_posts = await rag_pipeline.search_vector_store(reformatted_query)
             
-            # Extract news queries with the selected model
-            logger.info(f"Sending to news_query_extractor: {text[:50]}...")
+            # Step 3: Extract news queries
             news_query_result = llm_pipeline.news_query_extractor(text, model_name)
             news_query_string = news_query_result.content
-            
             logger.info(f"News queries: {news_query_string}")
             
             # Process news queries
             if isinstance(news_query_string, str):
-                # Split the comma-separated keywords and create individual queries
                 raw_keywords = [k.strip() for k in news_query_string.split(',')]
-                
-                # Filter out any empty keywords
                 keywords = [k for k in raw_keywords if k]
-                
-                # Create meaningful search queries from the keywords
-                # Prioritize full phrases for political context
                 queries = []
                 
-                # First, add any full politically relevant phrases (multi-word)
+                # Add multi-word phrases first
                 for keyword in keywords:
                     if len(keyword.split()) > 1:
                         queries.append(keyword)
                 
-                # If we have less than 3 queries, add important single terms
+                # Add important single terms if needed
                 if len(queries) < 3:
-                    # Add important single terms, preferring political entities
-                    political_entities = [k for k in keywords if len(k.split()) == 1 and len(k) > 3 and k.lower() not in ['the', 'and', 'with', 'from', 'that', 'this']]
+                    political_entities = [k for k in keywords if len(k.split()) == 1 and len(k) > 3 
+                                         and k.lower() not in ['the', 'and', 'with', 'from', 'that', 'this']]
                     queries.extend(political_entities[:3-len(queries)])
                     
                 # Ensure we have at least one query
                 if not queries and keywords:
-                    queries = keywords[:3]  # Limit to top 3 keywords if nothing else
+                    queries = keywords[:3]
                     
-                # Add one combined query with main terms for context
+                # Add combined query for context
                 if len(keywords) >= 2:
-                    main_terms = ' '.join(keywords[:3])  # Combine first 3 terms
+                    main_terms = ' '.join(keywords[:3])
                     if main_terms not in queries:
                         queries.append(main_terms)
             else:
                 queries = [news_query_string]
             
-            # Cap the number of queries to prevent too broad a search
-            queries = queries[:4]  # Limit to 4 queries maximum
+            # Limit queries
+            queries = queries[:4]
             
-            logger.info(f"Processed NewsAPI queries to send: {queries}")
+            logger.info(f"Processed NewsAPI queries: {queries}")
             news_results = await news_client.search_news(queries)
             
-            # Implement fallbacks for no results if needed
-            # (Simplified for this implementation)
-            
-            # Collect all articles
+            # Collect articles
             all_articles = []
             for result in news_results:
                 if 'articles' in result:
@@ -195,13 +161,9 @@ def analyze_text():
                 else:
                     all_articles.append(result)
             
-            # Score and sort articles (simplified)
-            # For a more sophisticated implementation, re-implement the scoring logic
-            
-            # Limit the number of Reddit posts and news articles
+            # Limit the number of results
             MAX_REDDIT_POSTS = 5
             MAX_NEWS_ARTICLES = 5
-
             reddit_posts = similar_posts[:MAX_REDDIT_POSTS]
             news_articles = all_articles[:MAX_NEWS_ARTICLES]
             
@@ -211,7 +173,6 @@ def analyze_text():
                     return ""
                 return text[:max_chars] + ('...' if len(text) > max_chars else '')
             
-            # Truncate Reddit posts
             try:
                 for post in reddit_posts:
                     if post is None:
@@ -225,7 +186,6 @@ def analyze_text():
             except Exception as e:
                 logger.error(f"Error truncating Reddit posts: {str(e)}")
             
-            # Truncate news articles
             try:
                 for article in news_articles:
                     if article is None:
@@ -237,23 +197,22 @@ def analyze_text():
             except Exception as e:
                 logger.error(f"Error truncating news articles: {str(e)}")
             
-            # Create context for LLM summarization
+            # Create context for summarization
             context = (
                 f"News Articles: {news_articles}\n"
                 f"Reddit Posts: {reddit_posts}"
             )
             
-            # Generate summary with the selected model
+            # Generate summary
             summary_result = llm_pipeline.context_summarizer(context, model_name)
             summary = summary_result.content
             
-            # Record end time and calculate total processing time
             process_end_time = time.time()
             total_process_time = process_end_time - process_start_time
             
             logger.info(f"Summary generated in {total_process_time:.2f}s")
             
-            # Collect evaluation data if requested
+            # Collect evaluation data
             if collect_feedback:
                 eval_data = {
                     "query_id": query_id,
@@ -278,10 +237,9 @@ def analyze_text():
                             "result": summary
                         }
                     },
-                    "user_feedback": None  # To be filled by frontend later
+                    "user_feedback": None
                 }
                 
-                # Store evaluation data for future analysis
                 store_evaluation_data(eval_data)
             
             return {
@@ -315,7 +273,6 @@ def analyze_text():
 
 @app.route('/feedback', methods=['POST'])
 def submit_feedback():
-    """Submit user feedback for a query"""
     data = request.get_json()
     if not data or 'query_id' not in data or 'rating' not in data:
         return jsonify({'error': 'Missing required fields'}), 400
@@ -325,7 +282,6 @@ def submit_feedback():
     comments = data.get('comments', '')
     
     try:
-        # Update the evaluation data with user feedback
         update_evaluation_feedback(query_id, rating, comments)
         return jsonify({'success': True})
     except Exception as e:
@@ -334,7 +290,6 @@ def submit_feedback():
 
 @app.route('/evaluation/reports', methods=['GET'])
 def get_evaluation_reports():
-    """Generate and return model comparison reports"""
     try:
         reports = generate_model_comparison_reports()
         return jsonify(reports)
